@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			Autoaprendizaje de Programaci&oacute;n
+		</title>
+		<link rel ="stylesheet" type = "text/css" href= "css/menu.css"/>
+		
+		<link rel ="stylesheet" type = "text/css" href= "css/general.css"/>
+	</head>
+
+	<body>
+		<div id="logo2">
+			<img src="img/logo.png">
+			<a name="home"><h1>Universidad Aut&oacute;noma Metropolitana <h2>Unidad Cuajimalpa</h2></h1></a>
+		</div>
+			<hr>	
+			<div id="logo">
+				<a href="index.html">
+				<b>|Inicio|<br></b>
+				</a>
+				<a href="objetos.html#menu">
+				<b>|Menu|<br></b>
+				</a>
+				<img src="uamcasa.png" onclick="location.href='index.html';"/>
+			</div>
+			</div>
+		<div id = "centro">
+			
+			<div id="menuSup">
+				<ul class = "menu">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href= "acerca.html">Acerca de</a></li>
+					<li class = "activoObjetos"><a href ="objetos.html">Objetos de Aprendizaje</a></li>
+					<li><a href ="temario.html">Temario</a></li>
+					<li><a href ="temario.html#contacto">Contacto</a></li>
+				</ul>
+			</div>
+			<div id = "contenido">
+				<h4>Palabras Clave</h4>
+	<p class="palclave">
+
+		Estructuras de control: Condicionales<br>
+		Ciclo For <br>
+	</p>
+			<!--Problema2-->
+				<hr noshade />
+				<br>
+				<a name="prob2"><h2>PROBLEMA #2</h2></a>
+				<hr/>
+				
+				<p>
+				<!--Se plantea problema-->
+				<h3>
+					Crear un programa que le pida al usuario ingresar un numero por teclado hasta que encuentre
+					el numero que el programa tiene almacenado en una variable, al final el programa debera decir si acert&oacute; al numero.
+				</h3><br>
+				<hr>
+				<br>
+				<h2>An&aacute;lisis</h2>	
+				<b>Planteamiento de la soluci&oacute;n:</b><br>
+				En una variable se almacenar&aacute; el numero, el cual el usuario deber&aacute; adivinar, ingresando por teclado
+				el numero al cal se desea acceder, mientras no coincida con el numero guardado en a variable no le permitir&aacute; avanzar al siguiente paso. Al momento de encontrar el numero deseado aparecer&aacute; un mensaje diciendo que acert&oacute; al numero.
+				<br><br>
+				<div class="centrar">
+					<a name="psc2"><h5>Pseudoc&oacute;digo</h5></a>
+					<br>
+					<pre>
+Proceso Repeticiones
+1.	Escribir ("Tengo un numero en mente, puedes adivinar cual es?");
+2.	Escribir ("Ingresa un numero entre 1 y 20");
+3.	Escribir ("Si aciertas se vera un mensaje");
+	
+4.	Leer N; 
+5.	Mientras N  &lt;&gt; 11 Hacer
+6.		Escribir ("Inserta otro numero");
+		Leer N; 
+7.		si N = 11
+8.			Entonces
+				
+9.			Escribir ("BINGO!!!!!!!!!!! :) :D ");
+10.		FinSi
+		
+11.		FinMientras
+		Escribir ("BINGO!!!!!!!!!!! :) :D ");
+	
+		
+12. 
+FinProceso
+
+					</pre>
+				<a href="#home">	
+				<b>|Volver Arriba|</b>
+				</a>
+					<br>
+					<a name="diagram2"><h5>Diagrama de Flujo</h5></a>
+					<img class="imdiag"src="img/diagrama2.png"/>
+				<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+					<br>
+					<a name="code2"><h5>C&oacute;digo en Lenguaje C</h5></a>
+					<br>
+					<b>Este programa interac&uacute;a con el usuario hasta que encuentre el numero almacenado en una variable de tipo entero.</b>
+					
+<pre>					
+//librerias
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;conio.h&gt;
+
+int main() 
+{//variables locales dentro de la funcion principal.
+     int enigma = 39; 
+     //variable oculta al usuario para adivinarla mediante teclado
+     //variable numerica que compara con la varibale estatica almacenada en escalones
+     int num; 
+     printf("Adivina");
+     printf("En que numero estoy pensando?: ");
+     scanf("%d",&num); // se almacena el numero    
+     while( enigma != escalones )
+     {
+      printf("No es esa la respuesta correcta, por favor escriba otra respuesta\n");
+      scanf("%d", &num); 
+      //se actualiza la variable numero
+     }
+     printf("Felicidades ha adivinado!\n");
+     system("pause");
+}
+</pre>
+<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+					<br>
+					<a name="out2"><h5>Salida del programa</h5></a>
+					<img src="img/salida2.png"/>
+
+				</div>
+				</p>			
+				<!--Fin Problema2-->
+				<a href="problema1.html">
+				<b>|Atras|</b>
+				</a>
+				<a href="index.html">
+				<b>|Inicio|</b>
+				</a>
+				<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+				<a href="problema2.html">
+				<b>|Siguiente|</b>
+				</a>
+		</div>
+
+</html>

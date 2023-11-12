@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			Autoaprendizaje de Programaci&oacute;n
+		</title>
+		<link rel ="stylesheet" type = "text/css" href= "css/menu.css"/>
+		<link rel ="stylesheet" type = "text/css" href= "css/general.css"/>
+	</head>
+
+	<body>
+	<div id="logo2">
+			<img src="img/logo.png">
+			<a name="home"><h1>Universidad Aut&oacute;noma Metropolitana <h2>Unidad Cuajimalpa</h2></h1></a>
+		</div>
+			<hr>
+			<div id="logo">
+				
+				<a href="index.html">
+				<b>|Inicio|<br></b>
+				</a>
+				<a href="objetos.html#menu">
+				<b>|Menu|<br></b>
+				</a>
+				<img src="uamcasa.png" onclick="location.href='index.html';"/>
+			</div>
+		<div id = "centro">
+			<div id= "menuSup">
+				<ul class = "menu">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href= "acerca.html">Acerca de</a></li>
+					<li class = "activoObjetos"><a href ="objetos.html">Objetos de Aprendizaje</a></li>
+					<li><a href ="temario.html">Temario</a></li>
+					<li><a href ="temario.html#contacto">Contacto</a></li>
+				</ul>
+			</div>
+
+			<div id = "contenido">
+				<h4>Palabras Clave</h4>
+	<p class="palclave">
+
+		Estructuras de control: Condicionales<br>
+		Ciclo For <br>
+	</p>
+<a name="prob3"><h2>PROBLEMA #3</h2></a>
+				<hr/>
+				
+				<p>
+				<!--Se plantea problema-->
+				<h3>
+					Dise&ntilde;ar un programa que calcule el promedio de las calificaciones de un alumno ingresado por teclado
+					hasta que el usuario finalice la entrada de datos. El programa deber&aacute; mostrar el resultado en pantalla.
+				</h3><br>
+				<hr>
+				<br>
+				<h2>An&aacute;lisis</h2>	
+				<b>Planteamiento de la soluci&oacute;n:</b><br>
+				Se pretende encontrar el promedio de los numeros a ingrear mediante una sumatoria de numeros ingresados por el usuario, dandole una condici&oacute;n de detenerse hasta que se dejen de ingresar datos.
+				Comparando la variable ingresada por el teclado hasta que sea diferente de si misma o igual a si misma ya que el ciclo controla la condici&oacute;n de paro.
+				<br><br>
+				<div class="centrar">
+					<a name="psc3"><h5>Pseudoc&oacute;digo</h5></a>
+					<br>
+					<pre>
+1. Proceso promedio
+2.	Escribir ("Define el numero de notas");
+3.	Leer N;
+4.	Sum &lt;- 0;
+5.	Para i&lt;-1 Hasta N Con Paso 1 Hacer
+6.		Escribir ("Nota: "), i;
+7.		Leer M;		
+8.		Sum &lt;- Sum + M;
+9.	FinPara
+10.	Escribir ("Suma acumulada es : "), Sum;
+11.	Promedio &lt;- Sum/N;
+12.	Escribir ("El promedio es: "), Promedio;
+	
+13. FinProceso
+					</pre>
+				<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+					<br>
+					<a name="diagram3"><h5>Diagrama de Flujo</h5></a>
+					<img class="imdiag"src="img/diagrama3.png"/>
+<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+					<br>
+					<a name="code3"><h5>C&oacute;digo en Lenguaje C</h5></a>
+					<br>
+					<b>El programa calcula el promedio mediante el uso de ciclos en este caso el uso del ciclo while
+					realiza la sumatoria y las veces que fueron ingresados datos es el contador para poder dividir
+					la sumatoria entre el numero de datos ingresados.</b>
+					
+<pre>
+/*Programa que realiza el promedio*/			
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt; 
+//uso de la libreria cadenas
+#pragma hdrstop
+#pragma argsused
+int main(int argc, char* argv[])
+{  //variables que almacenan la suma de los datos ingresados por teclado
+   int suma,sumatoria;     //inicializo variable en 0.
+   int contador = 0;  
+   char sigue;//varible de tipo caracter
+   float promedio;
+   //se inicia promedio en 0
+   promedio = 0;
+   sigue = 's';  //variable char
+   printf("Este programa calcula el promedio, hasta que oprima 'n' se dejan de ingresar elementos\n");
+   //es verdadero si se compara del mismo tipo de dato
+while (sigue == 's')
+{ 
+ printf("Ingresa dato: \n");
+ scanf("%d",&sumatoria);
+ printf("Si desea ingresar otro numero presiona 's' si no presiona 'n'\n");
+ fflush(stdin);
+ //depurar memoria del teclado
+ sigue = getch();
+//contador servira para saber sobre cuanto se hara la division.
+ contador++;
+ promedio = sumatoria+promedio;
+}
+   promedio = promedio/contador;
+   printf("El promedio es: %.2f \n",promedio);
+   //imprime el resultado final en formato de (.00) 2 decimales
+   system("pause");
+   return 0;
+}
+</pre>
+<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a><br>
+					<a name="out3"><h5>Salida del programa</h5></a>
+					<img src="img/salida3.png"/>
+				</div>
+				</p>			
+				<!--Fin Problema3-->
+				<a href="index.html">
+				<b>|Inicio|</b>
+				</a>
+				<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+				</div>
+
+</html>

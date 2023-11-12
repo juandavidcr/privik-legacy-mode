@@ -1,0 +1,164 @@
+<html>
+	<head>
+		<title>
+			Autoaprendizaje de Programaci&oacute;n
+		</title>
+		<link rel ="stylesheet" type = "text/css" href= "css/menu.css"/>
+		<link rel ="stylesheet" type = "text/css" href= "css/general.css"/>
+	</head>
+
+	<body>
+		<div id="logo2">
+			<img src="img/logo.png">
+			<a name="home"><h1>Universidad Aut&oacute;noma Metropolitana <h2>Unidad Cuajimalpa</h2></h1></a>
+		</div>
+			<hr>	
+			<div id="logo">
+				<a href="index.html">
+				<b>|Inicio|<br></b>
+				</a>
+				<a href="objetos.html#menu">
+				<b>|Menu|<br></b>
+				</a>
+			
+				<img src="uamcasa.png" onclick="location.href='index.html';"/>
+			
+			</div>
+			
+			</div>
+		<div id = "centro">
+			
+			<div id= "menuSup">
+
+				<ul class="menu">
+
+					<li><a href = "index.html">Inicio</a></li>
+					<li><a href= "acerca.html">Acerca de</a></li>
+					<li class = "activoObjetos"><a href ="objetos.html">Objetos de Aprendizaje</a></li>
+					<li><a href ="temario.html">Temario</a></li>
+					<li><a href ="contacto.html">Contacto</a></li>
+				</ul>
+			</div>
+		<div class="contenidobjet">
+			<div id="contenido">
+			<!--Problema6-->
+				<a name="home"><h2>PROBLEMA #6</h2></a>
+				<hr/>
+				
+				<p><h3>Crear un programa que calcule el area de un cuadrado, un triangulo y un circulo
+					y que imprima el valor en pantalla del area de cada una de las figuras.
+				</h3><br>
+				<hr>
+				<br>
+				<h2>An&aacute;lisis</h2>	
+				<b>Planteamiento de la soluci&oacute;n:</b><br>
+				Se pretende que el programa tenga un menu con la funcion switch en el cual el usuario 
+				podrá elegir el area que desea calcula, de no existir la opci&oacute;n que elige el usuario, marcará error
+				<br><br>
+				<div class="centrar">
+					<a name="psc6"><h5>Pseudoc&oacute;digo</h5></a>
+					<br>
+					<pre>
+					ProcesoAreas
+	Escribir ("Menu");
+	Escribir ("1.- Calcular el area del cuadrado");
+	Escribir ("2.- Calcular el area del triangulo");
+	Escribir ("3.- Calcular el area del circulo");
+
+	Leer opc;
+	Segun(opc) Hacer
+		Opcion_1:
+			Escribir ("Dame el lado: ");
+			Leer l;
+			a = l * l;
+			Escribir ("f", a);
+		Opcion_2:
+			Escribir("Dame la altura: ");
+			Leer h;
+			Escribir("Dame la base: ");
+			Leer b; 
+			a = (b * h) / 2;
+			Escribir ("f", a);
+		Opcion_3:
+			Escribir("Dame el radio: ");
+			Leer r;
+			pi = 3.1416;
+			a = pi * (r * r);
+			Escribir("f", a);
+		De otro modo:
+			Escribir("Opcion incorrecta");
+	Escribir ("Fin del programa");
+Fin Proceso
+					</pre><br>
+					<a name="diagra">
+					<h5>Diagrama de Flujo</h5></a>
+					<img class="imdiag"src="img/diagrama6.png"/><br>
+					<a name="code6"><h5>C&oacute;digo en Lenguaje C</h5></a>
+					<br>
+					<b>Este programa muestra la suma de todos los numeros enteros pares que hay del 1-100.</b>
+					
+<pre>					
+#include&lt;stdio.h&gt;
+int main()
+{
+    int opc;
+    float a,l,b,h,r,pi;
+    printf("Menu\n\n");
+    printf("1.- Calcular el area del cuadrado\n\n");
+    printf("2.- Calcular el area del triangulo\n\n");
+    printf("3.- Calcular el area del circulo\n\n");
+    
+    scanf("%d",&opc);
+    switch(opc)
+    {
+               case 1: printf("\n\nDame el lado: ");
+                       scanf("%f",&l);
+                       a=l*l;
+                       printf("\n\na: %f ",a);
+                       break;
+               
+               case 2: printf("\n\nDame la altura: ");
+                       scanf("%f",&h);
+                       printf("\n\nDame la base: ");
+                       scanf("%f",&b); 
+                       a=(b*h)/2;
+                       printf("\n\na: %f ",a);
+                       break;
+                       
+               case 3: printf("\n\nDame el radio: ");
+                       scanf("%f",&r);
+                       pi=3.1416;
+                       a=pi*(r*r);
+                       printf("\n\na: %f ",a);
+                       break;
+               
+               default: printf("\n\nopción incorrecta ");
+               break;
+    }
+    
+    printf("\n\nfin de programa ");
+    getch();
+    return 0;
+}           
+    
+</pre>
+					<a name="out6"><h5>Salida del programa</h5></a>
+					<img src="img/areac.png"/>
+					<img src="img/areacir.png"/>
+					<img src="img/areat.png"/>
+
+				</div>
+				<a href="index.html">
+				<b>|Inicio|</b>
+				</a>
+				<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+				</p>
+				<!--Fin Problema1-->
+			</div>
+				
+		</div>
+		
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			Autoaprendizaje de Programaci&oacute;n
+		</title>
+		<link rel ="stylesheet" type = "text/css" href= "css/menu.css"/>
+		<link rel ="stylesheet" type = "text/css" href= "css/general.css"/>
+	</head>
+
+	<body>
+		<div id="logo2">
+			<img src="img/logo.png">
+			<a name="home"><h1>Universidad Aut&oacute;noma Metropolitana <h2>Unidad Cuajimalpa</h2></h1></a>
+		</div>
+			<hr>
+<div id="logo">
+				<a href="index.html">
+				<b>|Inicio|<br></b>
+				</a>
+				<a href="objetos.html#menu">
+				<b>|Menu|<br></b>
+				</a>
+				
+				<img src="uamcasa.png" onclick="location.href='index.html';"/>
+				
+</div>
+			
+			
+		<div id = "centro">
+			
+			<div id= "menuSup">
+
+				<ul class = "menu">
+
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="acerca.html">Acerca de</a></li>
+					<li class="activoObjetos"><a href ="objetos.html">Objetos de Aprendizaje</a></li>
+					<li><a href="temario.html">Temario</a></li>
+					<li><a href="temario.html#contacto">Contacto</a></li>
+				</ul>
+
+			</div>
+
+			<div id = "contenido">
+				<h4>Palabras Clave</h4>
+	<p class="palclave">
+
+		Estructuras de control: Condicionales<br>
+		Ciclo For <br>
+	</p>
+<a name="prob5"><h2>PROBLEMA #5</h2></a>
+				<hr/>
+				
+				<p>
+				<!--Se plantea problema-->
+				<h3>
+					Hacer un programa que de la serie de Fibonacci hasta la cifra dada por el usuario.
+				</h3><br>
+				<hr>
+				<br>
+				<h2>An&aacute;lisis</h2>	
+				<b>Planteamiento de la soluci&oacute;n:</b><br>
+				
+				<br><br>
+				<div class="centrar">
+					<a name="psc5"><h5>Pseudoc&oacute;digo</h5></a>
+					<br>
+					<pre>
+Proceso seriedefibonacci
+	Escribir ("Cuantos numeros deseas desplegar");
+	a&lt;-1;
+	b&lt;-1;
+	Leer limite;
+	Escribir 0;
+	Escribir a;
+	Escribir b;
+	Para cont&lt;-1 Hasta limite-2 Con Paso 1 Hacer
+		fib &lt;- a+b;
+		Escribir fib;
+		a&lt;-b;
+		b&lt;-fib;
+	FinPara
+FinProceso</pre>
+<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+<br>
+					<a name="diagram5"><h5>Diagrama de Flujo</h5></a>
+					<img class="imdiag"src="img/diagrama5.png"/>
+<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+					<br>
+					<a name="code5"><h5>C&oacute;digo en Lenguaje C</h5></a>
+					<br>
+					<!--Explicacion del codigo-->
+					<b>Se le pregunta al usuario cuantos n&uacute;meros de la sucesi&oacute;n de fiboancci mediante un scanf que delimita hasta cu&aacute;ntos n&uacute;meros desea imprimir el usuario.<br>
+					En un ciclo for con el limite menos 2 debido a que los 2 primeros n&uacute;meros son constantes es decir 0 y 1. Se ingresa a un ciclo que se ejecutara hasta que "cont" llegue al limite dado por el usuario, fib corresponde a la formula de la serie de Fibonacci. Por asignaci&oacute;n destructiva "a" borra el valor que ten&iacute;a, se sustituye por el valor de actual "b", "b" borra el valor que ten&iacute;a  y se sustituye por el valor de "fib".
+					</b>
+					
+<pre>
+//Elaborado por: Jorge El&iacute;as Vigil Santos, correcciones: Juan David Contreras Ruiz
+//Este programa realizar&aacute; la serie de Fibonacci hasta la cifra dada por el usuario.
+#include&lt;stdio.h&gt; //Cabeceras (donde se incluyen las bibliotecas)
+void main() {	
+//Variables locales
+	int limite, a = 1, b = 1, fib, cont;
+
+	printf("bienvenido!\n");
+	printf("Este programa realizara la serie de fibonacci");
+	printf("Cuantos numeros de Fibonacci deseas desplegar?:\n");
+	scanf("%i", &limite);
+    printf("\nEsta es la sucesion numeros: ");//0,1,1,2,3,5,8,13
+	printf("0,%d, %d,",a,b);
+	for (cont = 1; cont &lt; limite - 2; cont ++) 
+	{
+fib = a + b;
+printf("%i,", fib);
+//fib corresponde a la formula de la serie de Fibonacci
+//Se imprime el numero de Fibonacci actual
+a = b;//Por asignaci&oacute;n destructiva "a" borra el valor que ten&iacute;a. 
+//se sustituye por el valor de actual "b"
+b = fib;
+//"b" borra el valor que ten&iacute;a  y se sustituye por el valor de "fib".
+	}	
+	printf("\n");
+	system("pause");
+}//Fin de funcion principal
+</pre><!--fin codigo de c-->
+<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a><br>
+					<a name="out5"><h5>Salida del programa</h5></a>
+					<img src="img/salida5.png"/>
+				</div>
+				</p>			
+				<!--Fin Problema5-->
+				<a href="index.html">
+				<b>|Inicio|</b>
+				</a>
+				<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+				</div>
+
+</html>

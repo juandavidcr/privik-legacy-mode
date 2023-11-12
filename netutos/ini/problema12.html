@@ -1,0 +1,199 @@
+<html>
+	<head>
+		<title>
+			Autoaprendizaje de Programaci&oacute;n
+		</title>
+		<link rel ="stylesheet" type = "text/css" href= "css/menu.css"/>
+		<link rel ="stylesheet" type = "text/css" href= "css/general.css"/>
+	</head>
+
+	<body>
+		<div id="logo2">
+			<img src="img/logo.png">
+			<a name="home"><h1>Universidad Aut&oacute;noma Metropolitana <h2>Unidad Cuajimalpa</h2></h1></a>
+		</div>
+			<hr>	
+			<div id="logo">
+				<a href="index.html">
+				<b>|Inicio|<br></b>
+				</a>
+				<a href="objetos.html#menu">
+				<b>|Menu|<br></b>
+				</a>
+			
+				<img src="uamcasa.png" onclick="location.href='index.html';"/>
+			
+			</div>
+			
+			</div>
+		<div id = "centro">
+			
+			<div id= "menuSup">
+
+				<ul class="menu">
+
+					<li><a href = "index.html">Inicio</a></li>
+					<li><a href= "acerca.html">Acerca de</a></li>
+					<li class = "activoObjetos"><a href ="objetos.html">Objetos de Aprendizaje</a></li>
+					<li><a href ="temario.html">Temario</a></li>
+					<li><a href ="contacto.html">Contacto</a></li>
+				</ul>
+
+			</div>
+
+		<div class="contenidobjet">
+			<div id="contenido">
+			<!--Problema1-->
+				<h2>PROBLEMA #12</h2>
+				<hr/>
+				
+				<p><h3>Crear un programa que resuelva la conversion de pesos a yenes, a d&oacute;lares, euros o nuevos soles .
+
+				</h3><br>
+				<hr>
+				<br>
+				<h2>An&aacute;lisis</h2>	
+				<b>Planteamiento de la soluci&oacute;n:</b><br>
+				Se pretende crear un programa con el uso de switch, con la finalidad que
+				al usuario se le muestren opciones de conversion, y asi mismo el usuario pueda
+				elegir la conversi&oacute;n que desee
+				<br><br>
+				<div class="centrar">
+					<a name="psc12"><h5>Pseudoc&oacute;digo</h5></a>
+					<br>
+					<pre>
+Poceso Principal
+	    
+		Escribe("     Conversor de pesos   ");
+		Escribe("Conversion de pesos a yenes,dolares,euros o nuevos soles");
+		Escribe("Menu");
+		Escribe("1.- Pesos a yenes");
+		Escribe("2.- Pesos a dolares");
+		Escribe("3.- Pesos a euros");
+		Escribe("4.- Pesos a nuevos soles");
+	    
+		Leer opc;
+	    
+		Segun opc
+
+			opcion_1: 
+				Escribe("Ingresa la cantidad en pesos: ");
+				Leer p;
+				y = p*5.63;
+				Escribir("Conversion a yenes: %.2f ",y);
+
+			opcion_2:
+				Escribe("Ingresa la cantidad en pesos: ");
+				Leer p;
+				d = p*0.071;
+				Escribe("Conversion a dolares: %.2f",d);
+			       
+		       opcion_3:
+				Escribe("Ingresa la cantidad en pesos: ");
+				Leer p;
+				e = p*0.057;
+				Escribe("Conversion a euros: %.2f" ,e);
+			      
+			       
+			opcion_4:
+				Escribe("Ingresa la cantidad en pesos: ");
+				Leer p;
+				ns = p*0.19;
+				Escribe("Conversion a nuevos soles: %.2f",ns);
+			       
+		       
+			De otro modo: 
+				Escribe("opcion incorrecta ");
+
+		FinSegun
+	    
+	    Escribe("fin de programa ");
+	    getch();
+	    Regresa 0;
+	FinProceso
+					</pre><br>
+					<a name="diagram">
+					<h5>Diagrama de Flujo</h5></a>
+					<img class="imdiag"src="img/diagrama12.png"/><br>
+					<a name="code12"><h5>C&oacute;digo en Lenguaje C</h5></a>
+					<br>
+					<b>Este programa muestra la Conversion de pesos a yenes,dólares,euros o nuevos soles.</b>
+					
+<pre>					
+#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;
+
+int main ()
+{
+    int opc;
+    float p,y,d,e,ns;
+       printf("     Conversor de pesos\n\n\n");
+    printf("Conversion de pesos a yenes,dolares,euros o nuevos soles \n");
+    printf("\nMenu\n\n");
+    printf("1.- Pesos a yenes\n\n");
+    printf("2.- Pesos a dolares\n\n");
+    printf("3.- Pesos a euros\n\n");
+    printf("4.- Pesos a nuevos soles\n\n");
+    
+    scanf("%d",&opc);
+    
+    switch(opc)
+    {
+               case 1: printf("Ingresa la cantidad en pesos: ");
+                       scanf("%f",&p);
+                       y=p*5.63;
+                       printf("Conversion a yenes: %.2f ",y);
+                       
+                       break;
+                       
+               
+           
+               case 2: printf("Ingresa la cantidad en pesos: ");
+                       scanf("%f",&p);
+                       d=p*0.071;
+                       printf("Conversion a dolares: %.2f",d);
+                       
+                       break;
+                       
+                       
+               case 3: printf("Ingresa la cantidad en pesos: ");
+                       scanf("%f",&p);
+                       e=p*0.057;
+                       printf("Conversion a euros: %.2f" ,e);
+                       
+                       break;
+                       
+               case 4: printf("Ingresa la cantidad en pesos: ");
+                       scanf("%f",&p);
+                       ns=p*0.19;
+                       printf("Conversion a nuevos soles: %.2f",ns);
+                       
+                       break;
+               
+               default: printf("\n\nopcion incorrecta ");
+               break;
+    }
+    
+    printf("\n\nfin de programa ");
+    getch();
+    return 0;
+}           
+    
+
+</pre>
+					<a name="out12"><h5>Salida del programa</h5></a>
+					<img src="img/salida12.png"/>
+				</div>
+				<a href="index.html">
+				<b>|Inicio|</b>
+				</a>
+				<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+				</p>
+			</div>
+				
+		</div>
+		
+
+</html>

@@ -1,0 +1,160 @@
+*{
+   display:box;
+}
+body{
+	background:#ccc;
+}
+img{
+overflow:hidden;
+}
+h1{
+   font-size:2.5em;
+}
+.centro{
+  margin-left: auto;
+  margin-right: auto;
+}
+.editable{
+  padding: 0px;
+  display: block;
+}
+#cabeza{
+    margin-bottom:1px;
+}
+ #header{
+   text-align:center;
+   font-size:2em;
+   
+}
+#ancla{
+   color:#81F7F3;
+   text-decoration:none;
+   font:15px Arial,Helvetica, sans-serif;
+}
+a{
+ cursor: pointer;
+}
+ a:visited,a:link{
+    color:#424242;
+	text-decoration:none;
+}
+a:hover{
+        color:#fff;
+        background:silver;
+        text-decoration:underline;
+      }
+dt{
+	color:black;
+}
+table{
+  margin-left:auto;
+  margin-right: auto;
+	border-collapse:collapse;
+	width:1200px;
+	
+}
+ul{
+   list-style-type:square;
+   font-size:2em;
+}
+.enc{
+   display: block;
+   width:inherit;
+   margin-left: -11px;
+   margin-right: auto;
+   padding: 3.1%;
+   background:white;
+   border-radius:10px;
+   color:silver;
+   border:1px solid cadetblue;
+}
+.enc>img{
+  float: right;
+}
+tr{
+  color:black;
+	background:#81F781;
+	width:50%;
+	height:50%;
+	font-size:17pt;
+	margin-left:12%;
+	border:2px solid #E6E6E6;
+	
+}
+td{
+	text-align:center;
+	border:1px solid #E6E6E6;
+	padding:10px;
+}
+
+.num{
+	background:#D8D8D8;
+}
+.dato{
+
+	background:#F7819F;
+}
+.niv{
+
+	background:#A9F5BC;
+}
+.cinco6{
+	background:#F5BCA9;
+}
+.ultimo{
+
+   background:cadetblue;
+}
+.vacio{
+   background:#6E6E6E;
+}
+.encabezado{
+   background:orange;
+   border-radius:10px;
+   width:70%;
+   height: 400px;
+   margin-left:1%;
+}
+.verde{
+   background:#CEF6CE;
+}
+.nombre{
+
+   color:black;
+}
+#optativa{
+	width:80%;
+	height:1000px;
+	border:1px solid orange;	
+}
+#desc{
+   background:white;
+   color:black;
+   text-align:left;
+   padding:3%;
+   font:14px Arial,Helvetica, sans-serif;
+   width:80%;
+   margin-left:5%;
+   margin-top:5%;
+}
+#logo{  
+  right:-23em;
+  top: 0px;
+  position:fixed;
+	overflow:visible;
+	margin-left:900px;
+	background-color:transparent;
+  margin:0 0 0 0;
+}
+p{
+   margin-top:5%;
+   font-size:3em;
+}
+pre{
+  border-radius:11px;
+  background:#FF8000;
+  width:230px;
+  height:auto;
+  padding:0.1%;
+  
+}

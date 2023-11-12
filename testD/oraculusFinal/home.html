@@ -1,0 +1,102 @@
+<!--Autores: Juan David Contreras Ruiz, Ricardo Melgoza, Rene Guerrero, Leonardo Carrillo
+* Inspección de software 1 : Realizada por Juan David Contreras 
+* Fecha: 01/07/14
+* Licencia: Universidad Autónoma Metropolitana Cuajimalpa 
+* Proyecto:***************************************************************************\
+* Oraculus version --Beta 1.1
+* Objetivo: Realizar búsquedas de preguntas estáticas predefinidas delegando a un webmaster la 
+* libertad de poner las mas rankeadas en las secciones principales de la aplicación, con link
+* hacia Disqus una plataforma libre para crear preguntas y respuestas con cualquier cuenta de 
+* las redes soportadas por esa aplicación:"Oraculus":
+* 
+-->
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>home</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/estiloPropio.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/fuente.css">
+		<!-- Este es el CSS del slider del home-->
+		<link rel="stylesheet" href="css/slidorion.css" />
+	</head>
+	<body>
+	
+		<div class="container baner">
+			<div class="row">	
+			<div class="banner">
+			 <img class="logo" src="img/oraculus.png" />
+			 <img class="ttf" src="img/logo.png" />	
+		</div>
+		<di
+		v class="container">
+			<div class="row">
+				<center id="menu">
+				<a href="home.html" class="btn btn-warning">Home</a>
+				<a href="secciones.html" class="btn btn-warning">Secciones</a>
+				<a href="contacto.html" class="btn btn-warning">Contacto</a>
+				</center>
+			</div> 	
+			<br>
+			<div id="slidorion" class="slidorion">
+			<div class="slider">
+				<div class="slide"><img src="img/1home.jpg" /></div>
+				<div class="slide"><img src="img/2home.jpg" /></div>
+				<div class="slide"><img src="img/3home.jpg" /></div>
+			</div>
+
+			<div class="accordion">
+				<div class="header">Bienvenido a ORACULUS</div>
+				<div class="content">
+					<p>Este sitio esta pensado para ayudar a los alumnos de la unidad Cuajimalpa en las dudas más frecuentes que les generan los tramites y servicios que son o no obligatorios en el transcurso de la vida académica dentro de la UAM.
+No importa el trimestre que estas cursando, siempre tienes preguntas que oraculus puede ayudarte a resolver.
+ </p>
+					<p>Hemos detectado las preguntas más frecuentes de cada departamento de la universidad, aún así las dudas van surgiendo mientras pasa el tiempo, por eso oraculus te permite postear tu pregunta, para que la comunidad te ayude a resolverla. Así todos los universitarios de la UAM podemos contribuir a un sitio más grande con contenido constantemente actualizado.</p>
+				</div>
+				<div class="header">¿Tienes una pregunta?</div>
+				<div class="content">
+					<p>Tal vez la duda que tienes es muy común para los alumnos de la UAM Cuajimalpa, así que seguramente ya tenemos la respuesta que buscas. En Oruculus están separadas las preguntas por departamentos universitarios para mayor facilidad de búsqueda. Actualmente tenemos preguntas y respuestas de movilidad, servicio social y actividades deportivas, pero gracias a ti y a los alumnos de la unidad Cuajimalpa pronto tendremos más departamentos con sus respectivas preguntas.</p>
+					<p>ESPERA PRONTO MÁS ACTUALIZACIONES</p>
+				</div>
+				<div class="header">Deja una pregunta </div>
+				<div class="content">
+					<p>Oraculus está pensado para irse actualizando con la ayuda de todos, ya que existen muchas dudas respecto servicios  universitario en oruculus puedes dejar tú pregunta para que cualquiera pueda responderte, por eso en cada sección de preguntas de cada departamento puedes dejar tu pregunta, y si es de las más votadas, un encargado del sitio la subirá de manera permanente y más visible para que sea más fácil para los demás encontrarla.</p>
+					<p>Así que ayuda a crecer a Oraculus para que todos podamos resolver nuestras dudas.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row-fluid"> 
+			<div class="span12">
+				<div class="caption text-center">
+					<h5>
+						Universidad Autónoma Metropilitana<br>
+						Unidad Cuajimalpa<br>
+						Av.Vasco de Quiroga 4871, colonia Santa Fe Cuajimalpa, delegación Cuajimalpa de Morelos,<br> México, Distrito Federal, C.P. 05300.
+					</h5>
+				</div>
+			</div>
+		</div>
+
+	<!-- estos son los scripts para el movimiento del slider del home-->
+	<script src="dist/jquery.min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+    <script src="dist/jquery.slidorion.min.js"></script>
+
+    <script>
+	$(function(){
+		$('#slidorion').slidorion({
+			effect: 'slideRandom',
+			hoverPause: true,
+			interval: 20000,
+			speed: 800,
+			controlNav: false,
+			controlNavClass: 'nav'
+		});
+	});
+	</script>
+	<!-- Finaliza los scripts del home-->
+	</body>
+</html>

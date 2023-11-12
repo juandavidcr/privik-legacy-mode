@@ -1,0 +1,196 @@
+<!--Proyecto: Privik
+ * Fecha: 18/06/2014
+ * Fecha: 20/06/2014 --Se inspeccionó el diseño de los iconos y pusimos efectos y transparencias.
+* Fecha:6/07/2014 rediseño del sitiocon las nuevas requisiciones.
+ -->
+
+<!--slider implementado, correcciones ortográficas y distribución de la información rev 1.
+    click sobre las imagenes de productos onclick se agrandan un poco, modificación sobre los productos
+ * Fecha: 25/06/2014
+ Autor: Juan David Contreras Ruiz 
+ Titulo_:Privik.com.mx
+ Documentacion: Alan Hernández; co-Autor: Santiago Avilés.
+ Creative
+
+ -->
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+    <meta charset="utf-8">
+    <title>privik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <!-- Stylesheets -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/estiloJD.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/estilosav.css" type="text/css" media="screen">
+    
+    <link rel="stylesheet" href="css/sub-theme-default.css" type="text/css" media="screen">
+</head>
+<body>
+
+  <header class="portada">
+    <nav>
+    <div class=" container">
+      <div class="col-md-8">
+          <!-- Edit your brand name here -->
+          <a name="home"></a>
+          <a href="index.html"> <img class="img-responsive logo" src="logo_transparente.png"/></a>
+      </div>
+      <div class="col-md-4 menu">
+          <ul class="nav nav-pills pull-right">
+                <li class="active"><a href="index.html">Inicio</a></li>
+                
+                <li><a href="refacciones.html">Refacciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
+          </ul>
+      </div>
+    </div>
+    </nav>
+
+
+    <section class="container titulo">
+        <div class="ventana">
+        <h1>
+        <p>Bienvenidos a <b>PRIVIK</b> 
+        <p>
+        <small>
+          Suministros y servicios profesionales 
+        </small>
+        </p>
+          </p>
+          Elevadores, Rampas, Puertas rápidas y más...
+          </h1>
+        </div>
+    </section>       
+
+  </header>  
+
+  <article><!--Empieza el container-->
+      <div class="container">
+               <!--Secciones-->
+        <div class="row">
+        
+
+        <div class="col-md-3 intro-box">
+            <a href="productos.html">
+             <button type="button" class="btn btn-primary btn-lg">
+              <span class="glyphicon glyphicon-cog"></span> 
+             </button>
+            </a>
+            <div class="box">
+                <!-- Edit your article content here -->
+                <h3><a href="productos.html#productos">Productos</a></h3>
+                
+            </div>
+        </div>
+        <div class="col-md-3 intro-box">
+           <a href="servicios.html#servicios">
+            <button type="button" class="btn btn-primary btn-lg">
+              <span class="glyphicon glyphicon-briefcase"></span> 
+            </button>
+            </a>
+            <div class="box">
+                <!-- Edit your article content here -->
+                <h3><a href="servicios.html">Servicios</h3>
+                
+            </div>
+        </div>
+
+        <div class="col-md-3 intro-box">
+           <a href="galeria.html">
+            <button type="button" class="btn btn-primary btn-lg">
+              <span class="glyphicon glyphicon-film"></span> 
+            </button>
+            </a>
+            <div class="box">
+                <!-- Edit your article content here -->
+                <h3><a href="galeria.html">Galería</h3>
+                
+            </div>
+        </div>
+
+        <div class="col-md-3 intro-box">
+            <a href="nosotros.html#nosotros">
+            <button type="button" class="btn btn-primary btn-lg">
+             <span class="glyphicon glyphicon-book"></span>
+             
+            </button>
+            </a>
+            <div class="box">                        
+                <h3><a href="nosotros.html">Nosotros</a></h3>
+                
+            </div>
+        </div>
+        <!--Fin secciones-->
+                   
+    </div>
+  </article>
+
+  <footer>
+    <div class="jumbotron">      
+      <a name="pie"></a>
+        <div class="pie">
+                     
+         
+              <div class="col-md-6 col-sm-4">
+                  <!-- Edit your footer content here -->
+                  <table class="table">
+                  <tr>
+                  <td rowspan="3">
+                      <a target="_self" href="privacidad.html">
+                      <button type="button" class="btn btn-default">
+                       <span class="glyphicon glyphicon-file"></span>
+                       <strong>Política de Privacidad</strong>
+                      </button>
+                      </a>
+                      
+                  </td>
+                  <td rowspan="3">
+                      <a href="nosotros.html#nosotros">
+                      <button type="button" class="btn btn-default">
+                       <span class="glyphicon glyphicon-home"></span>
+                       <strong>Nosotros</strong> 
+                      </button>
+                      </a>
+                      
+                  </td>
+                
+                    <td rowspan="3">
+                      <a href="contacto.html">
+                      <button type="button" class="btn btn-default">
+                      <span class="glyphicon glyphicon-pencil"></span>
+                      <strong>Contacto</strong>
+                      </button>
+                      </a>
+                    </td>
+                  </tr>
+                  </table>
+          </div>
+     </div>
+    
+    <small>Copyright © 2014 Privik</small>
+    <a href="#home"> <i class="fa fa-arrow-circle-o-up fa-3x flecha"></i></a>
+</footer>
+
+    <!--Cargamos jquery y damos la posibilidad de embeber aqui mismo el script-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/bootstrap.js"></script>    
+
+
+<script>
+    $(document).ready(function(){
+        $('.carousel').carousel()
+    });
+</script>
+
+
+
+
+   </body>
+
+</html>

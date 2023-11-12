@@ -1,0 +1,525 @@
+/*
+	 --------------------------------------
+	|										|
+	|	- EngineCss - 						|
+	|	- Proyecto:							|
+	|		Evaluacion de profesores		|
+	|	- Santiago AV						|
+	|	- UAM Cuajimalpa				   	|
+	|	- 2013 Mexico DF					|	
+	|										|
+	 --------------------------------------
+*/
+* {
+margin: 0px;
+padding: 0px;
+}
+@viewport {  width: device-width;}
+
+body 
+{
+	margin: 0px;
+	padding: 0px;
+	background: white	;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	color:#8f8981;
+	text-align: center;
+	
+	/*Gradiente de background
+	background: -webkit-linear-gradient(top, #FFFFFF, #B0B053);
+	background: -moz-linear-gradient(top, #FFFFFF, #B0B053);
+*/
+	
+	
+	
+
+}
+
+header
+{
+	background:black;
+}
+
+nav
+{
+	background:white;
+}
+
+section
+{
+	background:white;
+}
+
+aside
+{
+	background:#AEB404;
+}
+
+
+
+article
+{
+	background:#FFFFFF;
+}
+
+figure
+{
+	background:#FFFFFF;
+	text-shadow: rgba(88,88,88,0.5) 3px 3px 5px;
+	
+	-moz-border-image: url("imagenes/img02.png") 29 stretch;
+	-webkit-border-image: url("") 29 stretch;
+	 border-image: url("") 29 stretch;
+
+}
+
+form
+{
+	background:#efefe7;
+}
+
+td 
+{
+	
+}
+/*
+	 --------------------------------------
+	|													|
+	|	- Engine Css - 							|
+	|	- Dragosani24					   		|
+	|	- 2013 Mexico DF							|	
+	|													|
+	 --------------------------------------
+*/
+/*
+  En esta parte son los atributos generales de los elementos html5
+  Atributos:
+    block
+    borde redondeado 
+    sombra de caja 
+
+  */
+header, section, aside, nav, article, figure, figcaption,
+hgroup, input, div
+{
+	display: block;
+
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	
+	-moz-box-shadow: rgb(150,150,150) 2px 2px 15px;
+	-webkit-box-shadow: rgb(150,150,150) 2px 2px 15px;
+	box-shadow: rgb(150,150,150) 2px 2px 15px;	
+	
+	
+
+	
+	/*text-shadow: rgb(0,0,150) 3px 3px 5px;*/
+}
+
+/*---------------------------------------------------------------
+
+Aqui empiezan los id's que tienen casi todos los elementos html
+
+-----------------------------------------------------------------
+*/
+
+
+/*agrupa todos los elementos*/
+
+#agrupar
+{
+	width:auto;
+	height:auto;
+	margin-left: 5%;
+	margin-right:5%;
+	text-align:center;
+	
+}
+footer
+{
+    
+	background-color:#e7a61a;
+	border: 2px solid black;
+	border-radius: 80px 88px 10px 58px;
+	-moz-border-radius: 80px 88px 10px 58px;
+	-webkit-border-radius: 80px 88px 10px 58px;
+	border: 9px dotted #000000;
+	margin-left:200px;
+	position:relative;
+	top:0px;
+	margin-bottom:0%;
+	width:75%;
+	overflow:hidden;
+}
+
+
+
+#cabecera
+{
+	
+	text-align:left;
+	margin-top: 1%;
+	padding: 1%;	
+	color:white;
+
+}
+
+#cabecera:hover
+{ 
+	/*
+	-moz-transform: scale(1.009);
+	-webkit-transform: scale(1.009);
+	-moz-transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
+	-moz-transition: -moz-transform .5s ease-in-out 0.5s;
+	-webkit-transition: -webkit-transform .5s ease-in-out 0..5s;
+	*/
+}
+#menu
+{
+	
+	height:100%;
+	
+
+	
+}
+
+#menu li 
+{
+	list-style: none;
+	padding: 10%;
+	font: bold 100% verdana, sans-serif;
+    font-size:150%;
+	
+}
+#menu ul
+{
+    line-height:1pt;
+}
+#menu2
+{
+	font-size:150%;
+	left: 700px;
+	margin-top: 3%;
+
+	
+}
+
+/*Seccion-----------------------------------------------------------------------------*/
+
+#sec1
+{
+	float: left;
+	top:50px;
+	right:30px;
+	width: 30%;
+    margin-left:15%;
+	margin-top:30px;
+	color:silver;
+
+}
+
+#sec2
+{
+	float: right;
+	width: 20%;
+	height:65%;
+	margin-top: 3%;
+	margin-right: 15%;
+	padding:10px;
+	color:silver;
+	background-color: cadetblue;
+	
+	
+}
+
+#sec2 h1
+{
+	padding: 1%;
+}
+
+/*Colores---------------------------------------------------------------------------------*/
+
+#sub-sec-rojo
+{
+	float:left;
+	width:200px;
+	height: 100px;
+	background:white;
+	margin-top: 10%;
+}
+
+#sub-sec-amarillo
+{
+	float:left;
+	width:200px;
+	height: 100px;
+	
+	background:white;
+	margin-top: 10%;
+
+}
+
+#sub-sec-verde
+{
+	float:left;
+	width:200px;
+	height: 100px;
+	background: white;
+	margin-top: 10%;
+	 
+}
+
+
+#sub-sec-azul
+{
+	float:left;
+	width:200px;
+	height: 100px;
+	background: white; 
+	margin-top: 10%;
+}
+
+
+#sub-sec-morado
+{
+	float:left;
+	width:200px;
+	height: 100px;
+	background: white;
+	margin-top: 10%;
+	 
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+
+#columna 
+{
+	float: left;
+	width: 30%;
+	margin: 1% 0px;
+	padding: 2%;
+	background: #CCCCCC;
+	
+	outline: 2px dashed #000099;
+	outline-offset: 15px;
+	
+}
+
+/*Formulario de Login*/
+#formulario
+{
+	width:400px;
+
+	margin-top:5%;
+	margin-bottom:5%;
+	margin-left:4.7%;
+	margin-right:25%;
+
+	padding-top:5%;
+	padding-bottom: 5%;
+
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+
+	
+
+}
+
+#formulario h1
+{
+	margin-left: 18%;
+}
+
+
+
+.img01
+{
+	width:90px;
+	display: block;
+	float:left;
+
+	margin-right: 3%;
+	margin-left: 2%;	
+}
+
+.img02
+{
+	width:100%;
+}
+
+#usuario
+{
+	height:20px;
+}
+
+#password
+{
+	height:20px;
+}
+
+#tr-tab
+{
+	
+}
+
+#col-tr1
+{
+
+	width:100px;
+	text-align: right;
+
+	padding-top:2%;
+	padding-bottom: 2%;
+	padding-right: 2%;
+	padding-left: 2%;
+
+
+	-moz-box-shadow: rgb(150,150,150) 1px 1px 10px;
+	-webkit-box-shadow: rgb(150,150,150) 1px 1px 10px;
+	box-shadow: rgb(150,150,150) 1px 1px 10px;
+
+	
+}
+
+
+#col-tr1:onclick
+{
+	color:#04b1d8;
+}
+
+#col-tr2
+{
+
+	width:175px;
+	text-align: right;
+	font-size: 1em;
+	padding-top:3%;
+	padding-bottom: 3%;
+	padding-right: 3%;
+	padding-left: 4%;
+
+
+
+/*
+	-moz-box-shadow: rgb(150,150,150) 1px 1px 10px;
+	-webkit-box-shadow: rgb(150,150,150) 1px 1px 10px;
+	box-shadow: rgb(150,150,150) 1px 1px 10px;
+	*/
+}
+
+
+#ok
+{
+	padding-left:10%;
+	padding-right:10%; 
+	padding-top:1%;
+	padding-bottom:1%;
+
+	margin-top:5%;
+	margin-left: 35%;
+	
+	color:#0388a6;
+
+	background: #efefe7;
+
+	font-size: 20px;
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+
+
+}
+
+#ok:hover
+{
+	color:#04b1d8;
+}
+
+
+
+/*Efecto letras UAM Cuajimalpa*/
+#color-negro
+{
+	color:black;
+}
+#color-negro:hover
+{
+	color:#8d8d8d;
+}
+#color-naranja
+{
+	color:#f54d27;
+}
+#color-naranja:hover
+{
+	color:#8d8d8d;
+}
+
+#pie strong
+{
+	margin-left:.5%;
+}
+
+#pie sub:hover
+{
+	color:black;
+}
+
+
+/*Atributos a tabla de Alan*/
+#col-tabla-alan
+{
+
+	width:500px;
+	text-align: left;
+
+	padding-top:2%;
+	padding-bottom: 2%;
+	padding-right: 2%;
+	padding-left: 2%;
+
+	font-size: 13px;
+
+	-moz-box-shadow: rgb(150,150,150) 1px 1px 10px;
+	-webkit-box-shadow: rgb(150,150,150) 1px 1px 10px;
+	box-shadow: rgb(150,150,150) 1px 1px 10px;
+
+	
+}
+
+#intro
+{
+	float:left;
+	width:40%;
+	margin-top:2%; 
+	padding:1.5%;
+	margin-right: 10%;
+	margin-left: 5%;
+	margin-bottom: 1%;
+
+}
+
+#intro p
+{
+	margin-top: 2%;
+	font-size: 17px;
+}
+
+#intro li
+{
+	margin-top: 2%;
+	font-size: 20px;
+}
+
+

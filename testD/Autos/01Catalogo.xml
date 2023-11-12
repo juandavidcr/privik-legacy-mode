@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="01CatalogoEjercicio02.xsl"?>
+
+<catalogo>
+    <auto>
+        <marca>Volkswagen</marca>
+        <modelo>Jetta</modelo>
+        <anio>2008</anio>
+        <precio>152000</precio>
+        <combustible>gasolina</combustible>
+        <ciudad>DF</ciudad>
+    </auto>
+
+    <auto>
+        <marca>Honda</marca>
+        <modelo>Civic</modelo>
+        <anio>2006</anio>
+        <precio>155500</precio>
+        <combustible>gasolina</combustible>
+        <ciudad>Zacatecas</ciudad>
+    </auto>
+
+    <auto>
+        <marca>Ford</marca>
+        <modelo>Ka</modelo>
+        <anio>2005</anio>
+        <precio>62500</precio>
+        <combustible>gasolina</combustible>
+        <ciudad>Durango</ciudad>
+    </auto>
+
+     <auto>
+        <marca>Audi</marca>
+        <modelo>A3</modelo>
+        <anio>2014</anio>
+        <precio>342500</precio>
+        <combustible>gasolina</combustible>
+        <ciudad>Durango</ciudad>
+    </auto>
+
+    <auto>
+        <marca>Renault</marca>
+        <modelo>Laguna</modelo>
+        <anio>2004</anio>
+        <precio>96900</precio>
+        <combustible>gasolina</combustible>
+        <ciudad>Queretaro</ciudad>
+    </auto>
+
+    <auto>
+        <marca>Toyota</marca>
+        <modelo>Yaris</modelo>
+        <anio>2007</anio>
+        <precio>130000</precio>
+        <combustible>gasolina</combustible>
+        <ciudad>Sinaloa</ciudad>
+    </auto>
+
+    <auto>
+        <marca>Volkswagen</marca>
+        <modelo>Beetle</modelo>
+        <anio>2006</anio>
+        <precio>143000</precio>
+        <combustible>gasolina</combustible>
+        <ciudad>Sonora</ciudad>
+    </auto>
+
+    <auto>
+        <marca>Honda</marca>
+        <modelo>Civic</modelo>
+        <anio>2008</anio>
+        <precio>189000</precio>
+        <combustible>gasolina</combustible>
+        <ciudad>DF</ciudad>
+    </auto>
+    
+</catalogo>
+

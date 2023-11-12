@@ -1,0 +1,4 @@
+azul: #679ED2
+amarillo: #FFC700
+naranja: #FF5C00
+

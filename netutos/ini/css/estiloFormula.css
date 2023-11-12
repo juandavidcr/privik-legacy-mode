@@ -1,0 +1,92 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+#formulario{
+	margin:1%;
+	width:100%;
+	height:100%;
+	background:white;
+}
+#proceso{
+	background:white;
+	padding:0%;
+	margin:5%;
+	width:300px;
+	padding-left:1%;
+	margin-top:10px;
+}
+#datos{
+	background:#0067FF;
+	width:auto;
+	
+}
+#correo{
+	width:100%;
+	padding:1%;
+	margin-left:10%;
+	
+}
+b{
+	font-size:0.85em;
+	font-family:Helvetica, "monospace";
+}
+body{
+	
+	background:white;
+	font-size:1.5em;
+	font-family:Helvetica, "monospace";
+}
+div,span{
+	display:block;
+	background:#0067FF;
+	
+}
+form{
+
+	margin-left:1%;
+	width:auto;
+}
+h1{
+	color:black;
+}
+span{
+	background:white;
+	color:red;
+	padding:1%;
+	width:auto;
+	margin-left:1px;
+	
+	border:2px dashed cyan;
+	
+}
+div{
+	height:auto;
+	width:80%;
+	border-radius:20px;
+	margin:10px;
+	border: 6px red solid;
+	padding:1%;
+		
+	box-shadow:0px 0px 10px 1px white inset;
+}
+textarea{
+	padding:10px;
+	width:auto;
+	
+}
+input{
+	height:auto;
+	width:max-width;
+	
+}
+#boton{
+	color:green;
+	padding:2%;
+	font-family:Tahoma, sans-serif;
+	font-size:0.9em;
+}
+#enviar{
+	width:auto;
+	overflow:hidden;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			Autoaprendizaje de Programaci&oacute;n
+		</title>
+		<link rel ="stylesheet" type = "text/css" href= "css/menu.css"/>
+		<link rel ="stylesheet" type = "text/css" href= "css/general.css"/>
+	</head>
+
+	<body>
+		<div id="logo2">
+			<img src="img/logo.png">
+			<a name="home"><h1>Universidad Aut&oacute;noma Metropolitana <h2>Unidad Cuajimalpa</h2></h1></a>
+		</div>
+			<hr>	
+			<div id="logo">
+				<a href="index.html">
+				<b>|Inicio|<br></b>
+				</a>
+				<a href="objetos.html#menu">
+				<b>|Menu|<br></b>
+				</a>
+			
+				<img src="uamcasa.png" onclick="location.href='index.html';"/>
+			
+			</div>
+			
+			</div>
+		<div id = "centro">
+			
+			<div id= "menuSup">
+
+				<ul class="menu">
+
+					<li><a href = "index.html">Inicio</a></li>
+					<li><a href= "acerca.html">Acerca de</a></li>
+					<li class = "activoObjetos"><a href ="objetos.html">Objetos de Aprendizaje</a></li>
+					<li><a href ="temario.html">Temario</a></li>
+					<li><a href ="contacto.html">Contacto</a></li>
+				</ul>
+
+			</div>
+
+		<div class="contenidobjet">
+			<div id="contenido">
+			<!--Problema1-->
+				<a name="suma"><h2>PROBLEMA #8</h2></a>
+				<hr/>
+				
+				<p><h3>Crear un programa que calcule el valor absoluto, logaritmo, seno, la potencia y la exponencial;
+					y que imprima el valor en pantalla.
+				</h3><br>
+				<hr>
+				<br>
+				<h2>An&aacute;lisis</h2>	
+				<b>Planteamiento de la soluci&oacute;n:</b><br>
+				 Se pretende que por x valor ingresado por el usuario indique cual es el resultado de las siguientes funciones:
+				logaritmo, seno, valor absoluto, valor exponencial y la potencia Y 
+				<br><br>
+				<div class="centrar">
+					<a name="psc8"><h5>Pseudoc&oacute;digo</h5></a>
+					<br>
+					<pre>
+Proceso funcionesMatematicas
+	Escribir ("valor de x");
+	Leer x;
+	va &lt;- ABS(x);
+	Escribir ("El valor absoluto es: ",va);
+	Escribir ("El valor absoluto es: ",LN(va));
+	Escribir ("El valor absoluto es: ",SEN(va));
+	Escribir ("El valor absoluto es: ",EXP(va));
+	Escribir ("Ingresa Valor de y");
+	x&lt;-2;
+	Leer ye;
+	result&lt;- EXP(x);
+	resulty&lt;-EXP(ye);
+	Escribir ("La potencia de x a la y es:  ",result,resulty);
+FinProceso
+
+
+					</pre><br>
+					<a name="diagram">
+					<h5>Diagrama de Flujo</h5></a>
+					<img class="imdiag"src="img/diagrama8.png"/><br>
+					<a name="code8"><h5>C&oacute;digo en Lenguaje C</h5></a>
+					<br>
+					<b>Calcularemos valor absoluto, logaritmo, seno , constante <sup>e</sup> elevada y la potencia.</b>
+					
+<pre>					
+#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;
+#include&lt;math.h&gt;
+int main ()
+{
+    //Programa para clacular:
+    //Valor absoluto
+    float x,y,va,l,s,e,p;
+    printf("Introdce valor x: ");
+    scanf("%f",&x);
+    va=fabs(x);
+    printf("El valor absoluto es: %f \n",va);
+    //Logoraitmo
+    printf("El logaritmo es: %f \n",log10(x));
+    //Seno
+    printf("El seno de x es: %f \n",sin(x));
+    //Constante e
+    printf("La constate e elevada es: %f \n",exp(x));
+    //Potencia de x a la y
+    printf("Ingresa valor de y: ");
+    scanf("%f",&y);
+    printf("La potencia de x a la y es: %.2f \n",pow(x,y));
+    system("PAUSE");
+    return 0;
+}
+</pre>
+					<a name="out8"><h5>Salida del programa</h5></a>
+					<img src="img/pro4.png"/>
+				</div>
+				<a href="index.html">
+				<b>|Inicio|</b>
+				</a>
+				<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+				</p>
+				<!--Fin Problema8-->
+			</div>
+				
+		</div>
+		
+
+</html>

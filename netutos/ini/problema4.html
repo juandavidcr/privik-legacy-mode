@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			Autoaprendizaje de Programaci&oacute;n
+		</title>
+		<link rel ="stylesheet" type = "text/css" href= "css/menu.css"/>
+		<link rel ="stylesheet" type = "text/css" href= "css/general.css"/>
+	</head>
+
+	<body>
+	<div id="logo2">
+			<img src="img/logo.png">
+			<a name="home"><h1>Universidad Aut&oacute;noma Metropolitana <h2>Unidad Cuajimalpa</h2></h1></a>
+		</div>
+			<hr>	
+			<div id="logo">
+				
+				<a href="index.html">
+				<b>|Inicio|<br></b>
+				</a>
+				<a href="objetos.html#menu">
+				<b>|Menu|<br></b>
+				</a>
+				<img src="uamcasa.png" onclick="location.href='index.html';"/>
+			</div>
+			
+			</div>
+		<div id = "centro">
+			
+			<div id= "menuSup">
+
+				<ul class = "menu">
+
+					<li><a href = "index.html">Inicio</a></li>
+					<li><a href= "acerca.html">Acerca de</a></li>
+					<li class = "activoObjetos"><a href ="objetos.html">Objetos de Aprendizaje</a></li>
+					<li><a href ="temario.html">Temario</a></li>
+					<li><a href ="temario.html#contacto">Contacto</a></li>
+				</ul>
+
+			</div>
+<div id = "contenido">
+	<h4>Palabras Clave</h4>
+	<p class="palclave">
+
+		Estructuras de control: Condicionales<br>
+		Ciclos <br>
+	</p>
+<!--Problema 4-->
+				<a name="prob4"><h2>PROBLEMA #4</h2></a>
+				<hr/>
+				
+				<p>
+				<!--Se plantea problema dentro de h3-->
+				<h3>
+					Crear un programa que calcule si es un a&ntilde;o bisiesto o no.
+				</h3>
+				<br>
+				<hr>
+				<br>
+				<h2>An&aacute;lisis</h2>	
+				<b>Planteamiento de la soluci&oacute;n:</b>
+				<br>
+				<!--Se plantea como resolverlo-->
+				Un a&ntilde;o es bisiesto cada 4 a&ntilde;os y como solo se sabe si un numero es multiplo de 4 cuando termina en doble cero, y multiplos de 100 y 400.
+				<br><br>
+				<div class="centrar">
+					<a name="psc4"><h5>Pseudoc&oacute;digo</h5></a>
+					<br>
+					<pre>
+<!--Aqui va el pseudocodigo-->
+
+Proceso anioBisiesto
+	n&lt;-1;
+
+	Mientras n&lt;&gt;0 Hacer
+		
+		Escribir  ("un anio");
+		Leer anio;
+		Si ((anio MOD 4 = 0) & (anio MOD 100 n&lt;&gt; 0) | (anio MOD 400=0)) Entonces
+			Escribir ("es un anio bisiesto");
+		Sino
+			Escribir  ("no es anio bisiesto");
+		FinSi
+		Escribir ("Quieres ingresar otro anio?");
+		Leer respuesta;
+		Mientras respuesta = s Hacer
+	FinMientras
+	
+	FinMientras
+FinProceso
+					</pre>
+				<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+					<br>
+					<a name="diagram4"><h5>Diagrama de Flujo</h5></a>
+					<img src="img/diagrama4.png"/>
+				<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+					<br>
+					<!--Codigo en C en la etiqueta b-->
+					<a name="code4">
+						<h5>C&oacute;digo en Lenguaje C</h5>
+					</a>
+					<br>
+					<b>El programa deber&aacute; decidir si es un a&ntilde; bisiesto mediante los m&uacute;ltiplos de 4,						400 y 100.</b>
+					
+<pre>
+//Este es un programa que determina si un a&ntilde;o es bisiesto o no.
+#include&lt;stdio.h&gt; //Cabeceras
+void main(){
+	//Declaracion de variables locales
+	int year;
+	char respuesta[1];
+	printf("bienvenido!\n");
+	printf("Este programa te pedira que ingreses un anio y te dira si es bisiesto.\n");
+	do {
+		printf("Escribe un a&ntilde;o:\n");
+		scanf("%i", &year);
+		/*Esta es la parte de la funcion que evalua una condicion dada:
+		Un año es bisiesto cuando es divisible entre 4 pero no entre 100,
+		a excepción de los años divisibles entre 400 (que tambien son bisiestos).*/
+		if (((year % 4) == 0) && ((year % 100) != 0) || ((year % 400) == 0)) {
+			printf ("Es un anio bisiesto!\n");
+		}
+		else {
+			printf("No es anio bisiesto.\n");
+		}
+		printf("Quieres ingresar otro anio? (s/n):\n");
+		scanf("%s", respuesta);
+	}
+	while (respuesta[0] == 's');
+
+		printf("Gracias por su preferencia!\n");
+  system("pause");
+}//Fin de funcion main
+</pre><a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+				<br>
+					<a name="out4">
+						<h5>Salida del programa</h5></a>
+					<img src="img/salida4.png"/>
+					<img src="img/salida4_2.png"/>
+					</div>
+					<a href="index.html">
+				<b>|Inicio|</b>
+				</a>
+				<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+					</div>
+					
+
+</html>

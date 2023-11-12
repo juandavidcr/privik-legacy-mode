@@ -1,0 +1,57 @@
+*{
+	margin:0;
+	padding:0;
+}
+summary{
+	cursor: pointer;
+}
+.logo{
+  margin-top: 35pt;
+  font-weight: lighter;
+}
+
+
+.barra-nav{	
+	
+	top: 0px;
+	margin-top: 1%;
+	max-width: 95%;
+	margin-left: 400px;
+	position: fixed;
+	background-color: rgba(133,133,0,0.3);
+}
+.barra-nav > ul,a{
+  
+   font-size: 1.5em;
+   font-weight: lighter;
+}
+.barra-nav >li, a:hover{
+	background-color: #fff;
+	
+}
+
+	
+.cabecera{
+	background-color: transparent;		
+	font-size: 1em;	
+	margin-left: 10%;
+}
+
+.segundo-menu{
+	float: right;
+}
+.banner{
+    position: relative;
+    float: right;
+	background-color: rgba(0,133,66,0.5);
+	margin-right: 5%;
+	padding: 1%;	
+}
+.banner>i:hover{
+	color: yellow;
+   background-color: rgba(0,0,0,0.5);
+}
+.banner:hover{
+	background-color: rgba(245,245,245,0.5);
+	cursor: pointer;
+}

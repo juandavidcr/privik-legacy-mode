@@ -1,0 +1,263 @@
+@font-face{
+	 font-family: "Cantarell-Regular";
+	 src:url("../fonts/Cantarell-Regular.ttf");
+}
+body{
+	font-family: "Cantarell-Regular";
+
+}
+big{
+   color:black;
+   font-size:2em;
+}
+i{
+  color: black;
+}
+.menu1{
+  color: black;
+}
+.secciones{
+  display: inline-block;
+  margin-left: 5%;
+}
+.contact{
+   padding-left:20px;
+   text-align:center;
+   width:85%;
+   margin-left:100px;
+   background:transparent;
+   color: silver;
+   border: 1px solid cadetblue;
+}
+.contact button{
+   font-size:1.3em;
+   color:#ff4950;
+}
+.contact a{
+   color:black;
+   font-size:1.5em;
+}
+.galery{
+   float:left;
+   
+
+}
+.galery h2{
+   color:white;
+   
+}
+.galery img{
+    display:inline-block;
+    width: 150px;
+    height: 150px;
+	overflow:hidden;
+	cursor:pointer;
+	border:1px solid #000;
+}
+.galery a{
+    text-decoration:none;
+	
+}
+.galery a:hover{
+  cursor:pointer;
+}
+.galery sup{
+    text-align:left;
+	 font-size:2em;
+}
+.galery figcaption{
+  border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000;
+}
+.flecha{
+	position: fixed;
+	margin-left: 1.5%;
+	margin-right: 80%;
+	top: 51.5%;
+	z-index: 10;
+}
+.flechaAbajo{
+  position: fixed;
+  margin-left:1.5%;
+	margin-right: 80%;
+	top: 61.5%;
+	z-index: 10;	
+}
+#nosotros p {
+	padding-top: 0%;
+	color: black;
+	font-size: 1.5em;
+}
+#nosotros ul{
+
+	position: relative;
+	margin-top: 0px;
+}
+#nosotros ul li{
+	
+	list-style: none;
+}
+
+#letraP,#letraP1,#letraP2,#letraP3,#letraP4,#letraP5{
+	margin-top: 1px;
+	display: block;
+	font-size: 2em;
+	padding-right: 0px;
+}
+#letraP h2{
+   
+}
+#letraP small{
+  font-size:1em;
+  
+}
+#letraP1 small{
+font-size:1em;
+  
+}
+#letraP2 small{
+font-size:1em;
+  
+}
+#letraP3 small{
+  font-size:1em;
+  
+}
+#letraP4 small{
+font-size:1em;
+  
+}
+#letraP5 small{
+font-size:1em;
+  
+}
+#valores {
+    display:inline;
+}
+#valores h2{
+   font-size:1.5em;
+}
+#parrafoAviso{
+   background:transparent;
+   text-indent:2cm;
+   margin-left:5%;
+   margin-right:5%;
+}
+#logo1{
+   width:auto;
+   height:150px;
+}
+#logo2{
+  width:150px;
+}
+#parrafoT{
+  text-align:center;
+  font-size:2.5em;
+}
+#parrafoAviso li{
+   margin-left:6%;
+   list-style:none;
+   font-size:1.4em;
+}
+.degradado{
+background: rgba(226,226,226,1);
+background: -moz-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(50%, rgba(219,219,219,1)), color-stop(51%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+background: -webkit-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+background: linear-gradient(135deg, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
+}
+.logo{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .3);
+    float:left;
+    top: 10px;
+    left:10px;
+    margin-right: 80%;
+    width: 25%;
+    opacity: .8;
+}
+.portada{
+
+    top: 0px;
+    background: url('../PFLOW7.jpg') center no-repeat;
+    height: 600px;
+    width: auto;
+    
+}
+.brand2{
+   color: #ff2f00;
+   font-family: "Cantarell-BoldOblique";
+   font-weight: bold;
+   text-shadow: black 0.1em 0.1em 0.2em;
+   margin-right: 30%;
+  /*border: 7px dashed black;*/ 
+}
+.menu{
+    text-align: right;
+}
+.menu a
+{
+    display: inline;    
+    padding-left: 2%;
+}
+
+.titulo-pri{
+	font-size: 0.5em;
+    background:rgba(0,0,0,0.2);
+    width:45%;
+    height: 40%;
+    overflow: hidden;
+    line-height: 12pt;
+
+}
+.titulo-pri small{
+	top: 10px;
+}
+
+.slider{
+
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 550px;
+  height: 550px;
+  background-color: transparent;
+
+  
+}
+
+.color-galeria {
+  
+   background-color: transparent;
+
+
+}
+
+.color-galeria  i{
+  color:white;
+
+  
+}
+
+#tel{
+    font-size:1.2em;
+}
+
+.descripcion h1{
+  color:#ff4700;
+  background: black;
+  opacity: 0.5;
+  font-size: 2em;
+}
+.imagen{
+  width: auto;
+  height: auto;
+}
+
+#demo a{
+  font-size:1.5em;
+}
+

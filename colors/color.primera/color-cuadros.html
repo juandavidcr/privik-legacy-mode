@@ -1,0 +1,82 @@
+<!--
+	Proyecto: Color
+	Juan David Contreras Ruiz
+	jd.cloudvent.net
+	México DF 2013
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+	<meta name="description" content="Login">
+	<meta name="keywords" content="HTML5, CSS3, Javascript, Engine, CSS">
+	<title>Colores en inglés</title>
+	<link rel="stylesheet" href="css/color-cuadros.css"></link>
+	<script type="text/javascript" src="js/color.js"></script>
+</head>
+
+<body>
+<div id="agrupar">
+
+		<header id="cabecera">
+			<script type="text/javascript">
+				document.write('Date:'+retornarFecha());
+				document.write('<br>');
+				document.write('The time is:'+retornarHora());
+				document.write('<br>');
+				document.write("Select a color");
+				document.write('<br>');
+			</script>
+		<header>
+
+		<section id="sec1">
+        <h2>Ejemplo de uso de Javascript</h2>            
+			<ul id="menu">
+				<li id="rojo" onmouseover="rojo()" onmouseout="brojo()" >Rojo</li>
+				<li id="amarillo" onmouseover="amarillo()" onmouseout="bamarillo()">Amarillo</li>
+				<li id="verde" onmouseover="verde()" onmouseout="bverde(this)">Verde</li>
+				<li id="azul" onmouseover="azul()" onmouseout="bazul()">Azul</li>
+				<li id="morado" onmouseover="morado()" onmouseout="bmorado()">Morado</li>
+			</ul>
+
+		</section>
+
+		<section id="sec2" >
+
+			<section id="sub-sec-rojo">
+				<h1>Red</h1>
+			</section>
+			
+
+			<section id="sub-sec-amarillo">
+				<h1>Yellow</h1>
+			</section>
+
+			<section id="sub-sec-verde">
+				<h1>Green</h1>
+			</section>
+
+			<section id="sub-sec-azul">
+				<h1>Blue</h1>
+			</section>
+
+			<section id="sub-sec-morado">
+				<h1>Purple</h1>
+			</section>
+
+		</section>
+
+	</div>
+<footer>
+	<p>Designed by <a href="https://twitter.com/Dragosani24">@dragosani24</a> <br>
+	   Empowered by <a href="https://twitter.com/johndavid133">@johndavid133</a><br>
+	</p>
+	<a href="https://twitter.com/intent/tweet?screen_name=johndavid133" class="twitter-mention-button" data-lang="es" data-related="johndavid133">Tweet to @johndavid133</a>
+    
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<html>
+	<head>
+		<title>
+			Autoaprendizaje de Programaci&oacute;n
+		</title>
+		<link rel ="stylesheet" type = "text/css" href= "css/menu.css"/>
+		<link rel ="stylesheet" type = "text/css" href= "css/general.css"/>
+	</head>
+
+	<body>
+		<div id="logo2">
+			<img src="img/logo.png">
+			<a name="home"><h1>Universidad Aut&oacute;noma Metropolitana <h2>Unidad Cuajimalpa</h2></h1></a>
+		</div>
+			<hr>	
+			<div id="logo">
+				<a href="index.html">
+				<b>|Inicio|<br></b>
+				</a>
+				<a href="objetos.html#menu">
+				<b>|Menu|<br></b>
+				</a>
+			
+				<img src="uamcasa.png" onclick="location.href='index.html';"/>
+			
+			</div>
+			
+			</div>
+		<div id = "centro">
+			
+			<div id= "menuSup">
+
+				<ul class="menu">
+
+					<li><a href = "index.html">Inicio</a></li>
+					<li><a href= "acerca.html">Acerca de</a></li>
+					<li class = "activoObjetos"><a href ="objetos.html">Objetos de Aprendizaje</a></li>
+					<li><a href ="temario.html">Temario</a></li>
+					<li><a href ="temario.html#contacto">Contacto</a></li>
+				</ul>
+
+			</div>
+
+		<div class="contenidobjet">
+			<div id="contenido">
+			<!--Problema1-->
+				<a name="home"><h2>PROBLEMA #9</h2></a>
+				<hr/>
+				
+				<p><h3>Crear un programa que lea una calificación numérica,
+				la transforme en notas alfabéticas, dependiendo la calificación numerica, siendo los valores los siguientes, INSUFICIENTE (0-59),
+				SUFICIENTE (60-75), BIEN (75-85)MUY BIEN (85-100)
+				</h3><br>
+				<hr>
+				<br>
+				<h2>An&aacute;lisis</h2>	
+				<b>Planteamiento de la soluci&oacute;n:</b><br>
+				Se pretende crear un programa con condicional If, que lea una calificación numérica entre 0 y 100 introducida por el ususario, 
+				y la transformarla en una de las siguientes notas alfabéticas:
+				INSUFICIENTE (0-59)
+				SUFICIENTE (60-75)
+				BIEN (75-85)
+				MUY BIEN (85-100)
+				
+				<br><br>
+				<div class="centrar">
+					<a name="psc9"><h5>Pseudoc&oacute;digo</h5></a>
+					<br>
+					<pre>
+Proceso notas
+	Leer n;
+	Si n<50 Entonces
+		Escribir ("NA");
+	Sino
+		Escribir ("Tu numero es menor que 50 puntos");
+	FinSi
+	Si n>50 Entonces
+		Escribir ("B");
+	Sino
+		Escribir ("NA");
+	FinSi
+	Si n<75 Entonces
+		Escribir ("S");
+	Sino
+		Escribir ("NA");
+	FinSi
+	Si n>75 Entonces
+		Escribir ("B");
+	Sino
+		Escribir ("S");
+	FinSi
+	Si n=100 Entonces
+		Escribir ("MB");
+	Sino
+	Si n<100 Entonces
+		Escribir ("B");
+	Sino
+		Escribir ("S")
+	FinSi
+		Escribir ("B");
+	FinSi
+	
+FinProceso
+					</pre><br>
+					<a name="diagram">
+					<h5>Diagrama de Flujo</h5></a>
+					<img class="imdiag"src="img/diagrama9.png"/><br>
+					<a name="code9"><h5>C&oacute;digo en Lenguaje C</h5></a>
+					<br>
+					<b>Este programa muestra la seleccion de notas entre 1-100.<br>
+						Clasifica las notas seg&uacute;n el puntaje.
+					</b>
+					
+<pre>					
+#include &lt;stdio.h&gt;
+
+int main()
+{
+        int nota;
+	printf("Programa que calcula tu nota y dice si pasate o no rangos: de entre 0-100\n");
+	printf("Cual es tu calificacion:\n");
+	scanf("%d",& nota);
+	   if(nota&lt;50){
+	  	          printf("INSUFICIENTE");
+              
+	}
+      else
+         	       if(nota&lt;75){
+         	                printf("SUFICIENTE");
+         	   }
+            	   
+                       else
+            	            if(nota &lt;85){
+            	                 printf("BIEN");
+            	        }
+               	            
+                            else
+                  	         printf("MUYBIEN");	
+	
+	return 1;
+}
+
+
+</pre>
+					<a name="out9"><h5>Salida del programa</h5></a>
+					
+					<img src="img/salida9.png"/>
+				</div>
+				<a href="index.html">
+				<b>|Inicio|</b>
+				</a>
+				<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+				</p>
+				
+				<!--Fin Problema1-->
+			</div>
+				
+		</div>
+		
+
+</html>

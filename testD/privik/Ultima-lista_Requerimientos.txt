@@ -1,0 +1,33 @@
+﻿Simbología 
+(X) ==> Hecho!
+
+1 SANTIAGO) puedes eliminar la frase distribuidor autorizado en todos lados donde aparezca
+
+(x) 2 juan) en productos elevadores puedes hacer que la letra de los costados se vea vertical y de un tamaño que se alcance a leer
+
+(X) 3(jd)) puedes justificar el texto de todos los parrafos
+
+4 santiago) en equipo de anden puedes centrar las imagenes y utilizar el mismo color en el texto de los elevadores, tambien centrar las imagenes de elevadores
+
+(x) 5 JUAN) en puerta rapida puedes quitar la marca de ALBANY
+
+6 sav) en las imagenes de las rampas de vehiculo puedes hacer que las imagenes se vean mas pequeñas para que se aprecien en el flash y no se distorcionen
+
+(x) 7 Juan) asi como en los elevadores puedes poner la marca de los productos (maxon) debajo del texto
+
+(X) 8 JUAN) en la pagina de inicio púedes poner NOSOTROS  en lugar de valores
+
+9 JUAN) en galeria podemos poner mas imagenes, que estan sean pequeñas y que al seleccionarlas se hagan grandes. 
+
+10 SANTIAGO) en servicios los ultimos dos renglones los puedes agregar al listado principal para que compartan el mismo tipo de letra y tamaño
+
+Este ticket es el mas perron!!
+11 jd y sav) hay manera que en productos tengamos una pagina donde aparezcan los nombre de los productos, es decir pestaña 1 (elevadores de carga) pestaña 2 (rampas para vehiculo) pestaña 3 (equipos de anden) pestaña 4 (puertas rapidas), de tal manera que cuendo yo seleccione alguna de ellas me direccione a la pantalla donde aparece la explicacion e imagenes, esto es por que no me gusta tener que deslizarme en la pantalla hacia abajo para ver que hay(se soluciona con anclas)
+
+
+(X) 13 santiago) a el logo le puedes quitar el contorno
+->LE PUEDES REGRESAR EL COLOR ANTERIOR A CONTACTANOS
+->QUITAR EL CONTORNO DEL LOGO
+->EL DISEÑO QUE TENIAS ES GALERIA ESTABA BIEN, SOLO ERA AGREGAR MAS IMAGENES Y QUE EL TAMAÑO SEA UN POCO MENOR, NO ES NECESARIO ESCRIBIR QUE HAY QUE HACER CLICK PARA SE HAGA GRANDE
+->EN SERVICIOS AGREGAR AL RECUEDRO LOS DOS CONCEPTOS DE ABAJO
+->TE ADJUNTO UNA IMAGEN DE COMO DEBE DE QUEDAR LA PANTALLA DE PRODUCTOS COON TU LETRA Y DISEÑO (YO LO HICE ASI POR QUE ERA LO QUE HABIA)

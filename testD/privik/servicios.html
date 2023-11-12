@@ -1,0 +1,154 @@
+<!--Proyecto: Privik
+ * Fecha: 18/06/2014
+ * Fecha: 20/06/2014 --Se inspeccionó el diseño de los iconos y pusimos efectos y transparencias.
+* Fecha:6/07/2014 rediseño del sitiocon las nuevas requisiciones.
+ -->
+
+<!--slider implementado, correcciones ortográficas y distribución de la información rev 1.
+    click sobre las imagenes de productos onclick se agrandan un poco, modificación sobre los productos
+ * Fecha: 25/06/2014
+ Autor: Juan David Contreras Ruiz 
+ Titulo_:Privik.com.mx
+ Documentacion: Alan Hernández; co-Autor: Santiago Avilés.
+ Creative
+
+ -->
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+    <meta charset="utf-8">
+    <title>privik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <!-- Stylesheets -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/estiloJD.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/estilosav.css" type="text/css" media="screen">
+    
+    <link rel="stylesheet" href="css/sub-theme-default.css" type="text/css" media="screen">
+</head>
+<body>
+
+  <header class="portada">
+    <nav>
+    <div class=" container">
+      <div class="col-md-6">
+          <!-- Edit your brand name here -->
+          <a name="home"></a>
+          <a href="index.html"> <img class="img-responsive logo" src="logo_transparente.png"/></a>
+      </div>
+      <div class="col-md-6">
+          <ul class="nav nav-pills pull-right menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li class="active"><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="refacciones.html">Refacciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+      </div>
+    </div>
+    </nav>
+    <a name="servicios"></a>
+    <div class="container col3"><h1>Servicios</h1></div>
+    
+    <section class="container servicios titulo">                 
+    <h2>Realizamos el servicio de instalacion, mantenimiento preventivo, correctivo, reparaciones mayores y modificaciones a:
+    </h2>
+
+    <div class="container">
+    <ul>
+        <li class="list-group-item texto">Rampas niveladoras de anden hidráulicas y mecánicas.</li>
+        <li class="list-group-item texto">Mesas hidraulicas de tijera.</li>
+        <li class="list-group-item texto">Elevadores de carga.</li>
+        <li class="list-group-item texto">Sellos de anden y cobertizos.</li>
+        <li class="list-group-item texto">Rampas para vehiculo.</li>
+        <li class="list-group-item texto">Reparaciones en plataformas de aluminio.</li>
+        <li class="list-group-item texto">Puertas automaticas industriales tanto de anden como rapidas.</li>
+        <li class="list-group-item">Ganchos retenedores de vehiculo.</li>
+        <li class="list-group-item list-group-item-success texto">También reparamos y fabricamos <b>pistones hidráulicos</b> para cualquier tipo de maquinaria.</li>
+        <li class="list-group-item list-group-item-success texto">Reparamos <b>patines hidráulicos y </b> fabricamos <b>tableros de control</b> para equipos de andén y manejo de materiales.</li>
+        <li class="list-group-item list-group-item-success texto">Atendemos todas las marcas y a toda la industria, contamos con la mejor mano de obra y con el servicio de 24 hrs.</li>  
+        <li class="list-group-item"><a href="contacto.html#contacto" title="Teléfono de Contacto"><i class="fa fa-phone-square fa-3x"></i></a></li>
+    </ul>
+    </div>              
+          
+
+    </section>       
+
+  </header>  
+
+  <footer>
+    <div class="jumbotron">      
+      <a name="pie"></a>
+        <div class="pie">
+                     
+         
+              <div class="col-md-6 col-sm-4">
+                  <!-- Edit your footer content here -->
+                  <table class="table">
+                  <tr>
+                  <td rowspan="3">
+                      <a target="_self" href="privacidad.html">
+                      <button type="button" class="btn btn-default">
+                       <span class="glyphicon glyphicon-file"></span>
+                       <strong>Política de Privacidad</strong>
+                      </button>
+                      </a>
+                      
+                  </td>
+                  <td rowspan="3">
+                      <a href="nosotros.html">
+                      <button type="button" class="btn btn-default">
+                       <span class="glyphicon glyphicon-home"></span>
+                       <strong>Nosotros</strong> 
+                      </button>
+                      </a>
+                      
+                  </td>
+                
+                    <td rowspan="3">
+                      <a href="contacto.html">
+                      <button type="button" class="btn btn-default">
+                      <span class="glyphicon glyphicon-pencil"></span>
+                      <strong>Contacto</strong>
+                      </button>
+                      </a>
+                    </td>
+                  </tr>
+                  </table>
+                  
+                      
+                  <!--Muestra el mail de contacto en demo-->     
+                      
+                
+                 <!----> 
+
+                        
+          </div>
+     </div>
+    
+    <small>Copyright © 2014 Privik</small>
+    <a href="#home"> <i class="fa fa-arrow-circle-o-up fa-3x flecha"></i></a>
+</footer>
+
+    <!--Cargamos jquery y damos la posibilidad de embeber aqui mismo el script-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/bootstrap.js"></script>    
+
+
+<script>
+    $(document).ready(function(){
+        $('.carousel').carousel()
+    });
+</script>
+
+
+
+
+   </body>
+
+</html>

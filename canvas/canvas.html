@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+    <link rel="stylesheet" type="text/css" href="estilo-lienzo.css">
+    <link href="../css/bootstrap.css" type="text/css" rel="stylesheet">
+    <script type="application/javascript" src="cargadorCanvas.js" language="javascript">
+</script>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Finger+Paint">
+  </head>
+
+<body onload="dibujar()">
+<header class="col-md-8">
+ <figure>
+   <img src="../jdlogo.png" id="logo">
+   <img id="imagen-principal" src="jdh1.jpg">
+   </figure>
+ </header>  
+
+     <div class="col-md-12"> 
+
+       <ul class="nav nav-tabs" role="tablist">       
+         <li><a href="../index.html">Home</a></li>
+         <li ><a href="../portafolio.html">Portafolio</a></li>           
+         <li class="active"><a href="canvas/canvas.html">Dibujos</a></li>                
+         <li><a href="../rolas.html">Producciones audiovisuales y Experimentación sonora.</a></li>
+         
+      </ul>
+    </div>
+
+<article class="lienzo-centrado">
+       <figure>
+        
+        <canvas  id="lienzo" width="600" height="500">  
+        </canvas>
+         <p>Dibujada con la API Canvas HTML5</p>
+       </figure>
+    <footer>
+      <b>Autor: </b><a href="http://contechrasreeds.blogspot.mx">Juan David Contreras Ruiz</a>
+    </footer>           
+</article>    
+</body>
+</html>
+<!--window.onload = function() {
+var canvas = document.getElementById("myCanvas");
+var context = canvas.getContext("2d");
+ 
+// sigue el código
+
+var imageObj = new Image();
+      imageObj.onload = function() {
+        var pattern = context.createPattern(imageObj, 'repeat');
+
+        context.rect(0, 0, canvas.width, canvas.height);
+        context.fillStyle = pattern;
+        context.fill();
+      };
+      imageObj.src = 'wood-pattern.png';
+ 
+};
+-->

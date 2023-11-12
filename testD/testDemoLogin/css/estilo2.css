@@ -1,0 +1,258 @@
+.form_settings { 
+  margin: 15px 0 0 0;
+}
+
+.form_settings p { 
+  padding: 0 0 4px 0;
+}
+
+.form_settings span { 
+  float: left; 
+  width: 200px; 
+  text-align: left;
+}
+  
+.form_settings input, .form_settings textarea { 
+  padding: 5px; 
+  width: 299px; 
+  font: 100% arial; 
+  border: 1px solid #D5D5D5; 
+  background: #FFF; 
+  color: #47433F;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;  
+}
+  
+.form_settings .submit { 
+  font: 140% 'Yanone Kaffeesatz', arial, sans-serif; 
+  border: 0; 
+  width: 99px; 
+  margin: 0 0 0 212px; 
+  height: 33px;
+  padding: 2px 0 3px 0;
+  cursor: pointer; 
+  background: #ddd; /* Show a solid color for older browsers */
+  background: -moz-linear-gradient(#fff, #ddd);
+  background: -o-linear-gradient(#fff, #ddd);
+  background: -webkit-linear-gradient(#fff, #ddd);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  border: 1px solid #ddd;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;
+  color: #222;
+  text-shadow: 1px 1px #FFF;
+}
+
+.form_settings textarea, .form_settings select { 
+  font: 100% arial; 
+  width: 299px;
+}
+
+.form_settings select { 
+  width: 310px;
+}
+
+.form_settings .checkbox { 
+  margin: 4px 0; 
+  padding: 0; 
+  width: 14px;
+  border: 0;
+  background: none;
+}
+
+.separator { 
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #D9D5CF;
+  border-bottom: 1px solid #FFF;
+  margin: 0 0 20px 0;
+}
+  
+table { 
+  margin: 10px 0 30px 0;
+}
+
+table tr th, table tr td { 
+  background: #BBB;
+  color: #FFF;
+  padding: 7px 4px;
+  text-align: left;
+}
+  
+table tr td { 
+  background: #DDD;
+  color: #444;
+  border-top: 1px solid #FFF;
+}
+
+/* Image Transitions */
+ul#images {
+  margin: 0 15px 10px 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+ul#images li {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  float: left;
+  width: 155px;
+  height: 300px;
+}
+
+
+
+/**
+Stylesheet for SooperFish by www.SooperThemes.com
+Author: Jurriaan Roelofs
+**/
+
+/* Configuration of menu width */
+html body ul.sf-menu ul,html body ul.sf-menu ul li { 
+  width: 200px;
+}
+
+html body ul.sf-menu ul ul { 
+  margin: 0 0 0 200px;
+}
+
+/* Framework for proper showing/hiding/positioning */
+ul.sf-menu,ul.sf-menu * { 
+  margin: 0;
+  padding: 0;
+}
+
+ul.sf-menu { 
+  display: block;
+  position: relative;
+}
+  
+ul.sf-menu li { 
+  display: block;
+  list-style: none;
+  float: left;
+  position: relative;
+}
+  
+ul.sf-menu li:hover { 
+  visibility: inherit; /* fixes IE7 'sticky bug' */ 
+}
+
+ul.sf-menu a { 
+  display: block;
+  position: relative;
+}
+  
+ul.sf-menu ul { 
+  position: absolute;
+  left: 0;
+  width: 150px; 
+  top: auto;
+  left: -999999px;
+}
+  
+ul.sf-menu ul a { 
+  zoom: 1; /* IE6/7 fix */ 
+}
+
+ul.sf-menu ul li { 
+  float: left; /* Must always be floated otherwise there will be a rogue 1px margin-bottom in IE6/7 */
+  width: 150px;
+}
+  
+ul.sf-menu ul ul { 
+  top: 0;
+  margin: 0 0 0 150px;
+}
+
+ul.sf-menu li:hover ul,ul.sf-menu li:focus ul,ul.sf-menu li.sf-hover ul, 
+ul.sf-menu ul li:hover ul,ul.sf-menu ul li:focus ul,ul.sf-menu ul li.sf-hover ul,
+ul.sf-menu ul ul li:hover ul,ul.sf-menu ul ul li:focus ul,ul.sf-menu ul ul li.sf-hover ul,
+ul.sf-menu ul ul ul li:hover ul,ul.sf-menu ul ul ul li:focus ul,ul.sf-menu ul ul ul li.sf-hover ul { 
+  left: auto;
+}
+  
+ul.sf-menu li:hover ul ul,ul.sf-menu li:focus ul ul,ul.sf-menu li.sf-hover ul ul,
+ul.sf-menu ul li:hover ul ul,ul.sf-menu ul li:focus ul ul,ul.sf-menu ul li.sf-hover ul ul,
+ul.sf-menu ul ul li:hover ul ul,ul.sf-menu ul ul li:focus ul ul,ul.sf-menu ul ul li.sf-hover ul ul,
+ul.sf-menu ul ul ul li:hover ul ul,ul.sf-menu ul ul ul li:focus ul ul,ul.sf-menu ul ul ul li.sf-hover ul ul { 
+  left: -999999px;
+}
+
+/* autoArrows CSS */
+span.sf-arrow { 
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  display: block;
+  background: url(../images/arrows-black.png) no-repeat 0 0;
+  overflow: hidden; /* making sure IE6 doesn't overflow and expand the box */
+  font-size: 1px;
+}
+
+ul ul span.sf-arrow { 
+  right: 5px;
+  top: 20px;
+  background-position: 0 100%;
+}
+
+/* Theming the menu */
+ul#nav { 
+  float: left;
+}
+
+ul#nav ul { 
+  background: #ddd;
+  margin-top: 5px;
+  padding-bottom: 15px;
+}
+
+ul#nav li a { 
+  padding: 7px 25px 6px 25px;
+  font: 170% 'Yanone Kaffeesatz', arial, sans-serif;
+  text-shadow: 1px 1px #fff;
+  text-decoration: none;
+  color: #222;
+  margin-right: 2px;
+}
+
+ul#nav li a:hover, ul#nav li a:focus, ul#nav li.selected a, ul#nav li.selected a:hover, ul#nav li.selected a:focus { 
+  color: #B30303;
+  text-shadow: none;
+}
+
+ul#nav ul li a { 
+  color: #222;
+}
+
+ul#nav ul li a:hover { 
+  color: #B30303;
+  margin-right: 2px;
+}
+
+
+
+/* Image Transitions */
+ul#images {
+  margin: 0 15px 10px 0;
+  padding: 0;
+  position: relative;
+}
+
+ul#images li {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  float: left;
+  width: 155px;
+  height: 300px;
+  list-style: none;
+}

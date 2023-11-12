@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+ <script src="applets/ip2html5.js"></script>
+<link rel="stylesheet" href="applets/imnorm_new.css" type="text/css"/>
+<link href="styles/new_tabs4.css" rel="stylesheet" type="text/css"/>
+ <link href="css/estilo.css" type="text/css" rel="stylesheet">  
+<meta name="description" content="Practice English vocabulary related to Art. Within each category, place your cursor over an image to hear it pronounced aloud, then quiz yourself by activating &#x27;quiz mode&#x27;." />
+<title>Mi mundo en otra lengua: Artes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<link href="applets/marker4.css" rel="stylesheet" type="text/css" />
+<script>
+	var language = "en";
+	var target = "en";
+var times = new Array(0.95, 2.01, 3.21, 4.29, 5.52, 6.72, 7.8, 9.03, 11.19, 12.19, 14.88, 16.13, 17.34, 18.47, 19.31, 21.68, 22.71, 23.98, 25.04, 26.17, 27.63, 29.08, 29.96, 31.17, 32.58, 33.72, 34.68, 35.73);
+var deactivatedQuizElements = [9,10,11];
+var hasDeactivatedQuizElements = true;
+var hasDifficulties = false;
+ var saveToAccount = "Save to Account";
+
+</script>
+</head>
+
+<body onload="set()" >
+<header class="col-md-8">
+   <img src="jdlogo.png" id="logo">
+   <ul class="nav nav-tabs" role="tablist">       
+         <li class="active"><a href="index.html">Home</a></li>            
+            <li>
+          <details>
+          <summary>Menu...</summary>
+          <ul class="nav nav-pills">
+            <li><a href="portafolio.html">Portafolio</a></li>                       
+            <li><a href="english/english.html">English</a></li>
+          </ul>             
+        </details>
+        </li>
+ </ul>
+ </header>
+     <div>
+    <div id="titulo"> 
+    
+    <h1>Vocabulario de Artes en Ingl&eacute;s</h1>
+    <hr>
+    <br>
+    </div>
+    </div>
+<div id="newheader" align="center">
+   <p>Practice English vocabulary related to Art. Within each category, place your cursor over an image to hear it pronounced aloud, then quiz yourself by activating quiz mode</p>
+   </div>
+<table id="control" >
+  <tr>
+<td class="col1">
+
+<div id="menuop">
+<a  onclick="displayOptions('options', event)">opciones<img src="http://www.languageguide.org/vocabulary/down_arrow.png" width="10" height="6" /></a>
+
+</div>
+<ul class="options" id="options">
+
+
+<li onclick="javascript:toggleSpelling()"><input type="checkbox" id="spelling" value="spelling" checked>
+Show Spelling	
+</li>
+<!--
+
+-->
+<li onclick="javascript:toggleQuiz()"><input type="checkbox" id="quiz" value="quiz"> Listening Quiz</li> 
+
+
+</ul>
+
+<div style="float:left; height: 38px; border:2px dotted pink; " id="quiz_div">
+
+<div style="float:right;width:40px;" id="speaker"></div>
+<button id='skip' name='skip' onClick='quizSkip()' accesskey="s">Skip</button>
+<button id='displayAnswer' name='displayAnswer' onClick='quizShow()' accesskey="a">Show</button>
+<!--<div id="groups"></div>-->
+<!--<a href="/eng/quiz_help.html"><img src="/images/category_index/info_small.png" width="14" height="14" border="0"></a>-->
+
+</div></td>
+<td class="col2">
+<h2><a class='hover_title' onmouseover="playSound(-1)">Art</a></h2>
+</td>
+<td class="col3"><audio id="player" autoplay controls><source src="http://www.languageguide.org/snd/en/art.m4a" /><source src="/snd/en/art.ogg" type="audio/ogg" />Whoops, we thought your browser supported HTML5 audio and it doesn't. <a href="/user/report.jsp">Click here</a> to report the issue.</audio>
+</td>
+</tr>
+</table>
+
+
+<img src="images/art.png"  width="895" height="836" border="0" usemap="#Map" />
+<map name="Map" id="Map">
+  <area shape="poly" coords="2,20,86,18,121,139,3,135" id="0" name="6115"  alt="actor" />
+  <area shape="rect" coords="186,1,277,150" id="1" name="6116"  alt="actress" />
+  <area shape="poly" coords="357,85,373,40,405,21,442,49,397,117,368,104" id="2" name="6117"  alt="mask" />
+  <area shape="poly" coords="555,20,446,169,589,163,572,29" id="3" name="6118"  alt="spotlight" />
+  <area shape="rect" coords="632,6,858,192" id="4" name="6119"  alt="stage" />
+  <area shape="rect" coords="21,187,118,347" id="5" name="6120"  alt="director" />
+  <area shape="poly" coords="172,256,259,203,277,240,266,281,174,275" id="6" name="6121"  alt="megaphone" />
+  <area shape="poly" coords="391,335,398,274,426,267,443,215,474,217,518,246,518,264,541,258,550,292,550,318,461,344" id="7" name="6122"  alt="star" />
+  <area shape="rect" coords="654,256,848,334" id="8" name="6123"  alt="audience" />
+  <area shape="rect" coords="860,243,893,278" id="9" name="6124"  alt="applause" />
+  <area shape="rect" coords="859,287,929,318" id="10" name="6125"  alt="clap" />
+  <area shape="rect" coords="857,326,894,356" id="11" name="6126"  alt="boo" />
+  <area shape="poly" coords="3,412,121,389,124,485,6,522" id="12" name="6127"  alt="painting" />
+  <area shape="circle" coords="154,534,19" id="13" name="6128"  alt="frame" />
+  <area shape="poly" coords="226,386,261,393,264,408,309,419,308,465,280,477,280,536,290,562,229,573,228,519,218,489,211,434" id="14" name="6129"  alt="painter" />
+  <area shape="poly" coords="366,398,434,388,424,504,427,548,405,575,343,559,341,493" id="15" name="6130"  target="easel" alt="easel" />
+  <area shape="circle" coords="495,382,17" id="16" name="6131"  alt="canvas" />
+  <area shape="rect" coords="520,410,582,443" id="17" name="6132"  alt="paint" />
+  <area shape="poly" coords="491,507,523,489,555,495,569,518,561,540,533,564,497,563,481,537" id="18" name="6133"  alt="palette" />
+  <area shape="poly" coords="640,456,670,417,716,393,729,413,661,464" id="19" name="6134"  alt="paint brush" />
+  <area shape="poly" coords="611,539,615,507,647,491,731,495,732,511,732,543,692,573" id="20" name="6135"  alt="portfolio" />
+  <area shape="poly" coords="857,466,881,476,892,527,892,570,775,559,779,539,806,460,822,433,849,432" id="21" name="6136"  alt="model" />
+  <area shape="rect" coords="13,603,153,815" id="22" name="6137"  alt="sculptor" />
+  <area shape="circle" coords="201,657,20" id="23" name="6138"  alt="sculpture" />
+  <area shape="circle" coords="206,758,20" id="24" name="6139"  alt="pedestal" />
+  <area shape="poly" coords="364,652,370,683,394,709,378,792,320,790,302,721,327,652" id="25" name="6140"  alt="bust" />
+  <area shape="poly" coords="586,822,531,772,526,661,553,634,653,634,681,618,767,639,890,632,888,834" id="26" name="6141"  alt="museum " />
+</map>
+<div id="A0" class="pop_up" >actor</div> <div id="A1" class="pop_up" >actress</div> <div id="A2" class="pop_up" >mask</div> <div id="A3" class="pop_up" >spotlight</div> <div id="A4" class="pop_up" >stage</div> <div id="A5" class="pop_up" >director</div> <div id="A6" class="pop_up" >megaphone</div> <div id="A7" class="pop_up" >star, celebrity</div> <div id="A8" class="pop_up" >audience</div> <div id="A9" class="pop_up" >applause</div> <div id="A10" class="pop_up" >clap</div> <div id="A11" class="pop_up" >boo</div> <div id="A12" class="pop_up" >painting</div> <div id="A13" class="pop_up" >frame</div> <div id="A14" class="pop_up" >painter<br />artist (general)</div> <div id="A15" class="pop_up" >easel</div> <div id="A16" class="pop_up" >canvas</div> <div id="A17" class="pop_up" >paint</div> <div id="A18" class="pop_up" >palette</div> <div id="A19" class="pop_up" >paint brush</div> <div id="A20" class="pop_up" >portfolio</div> <div id="A21" class="pop_up" >model</div> <div id="A22" class="pop_up" >sculptor</div> <div id="A23" class="pop_up" >sculpture</div> <div id="A24" class="pop_up" >pedestal</div> <div id="A25" class="pop_up" >bust</div> <div id="A26" class="pop_up" >museum</div> <div id="T0" class="trans_popup">actor</div> <div id="T1" class="trans_popup">actress</div> <div id="T2" class="trans_popup">mask</div> <div id="T3" class="trans_popup">spotlight</div> <div id="T4" class="trans_popup">stage</div> <div id="T5" class="trans_popup">director</div> <div id="T6" class="trans_popup">megaphone</div> <div id="T7" class="trans_popup">star, celebrity</div> <div id="T8" class="trans_popup">audience</div> <div id="T9" class="trans_popup">applause</div> <div id="T10" class="trans_popup">clap</div> <div id="T11" class="trans_popup">boo</div> <div id="T12" class="trans_popup">painting</div> <div id="T13" class="trans_popup">frame</div> <div id="T14" class="trans_popup">painter</div> <div id="T15" class="trans_popup">easel</div> <div id="T16" class="trans_popup">canvas</div> <div id="T17" class="trans_popup">paint</div> <div id="T18" class="trans_popup">palette</div> <div id="T19" class="trans_popup">paint brush</div> <div id="T20" class="trans_popup">portfolio</div> <div id="T21" class="trans_popup">model</div> <div id="T22" class="trans_popup">sculptor</div> <div id="T23" class="trans_popup">sculpture</div> <div id="T24" class="trans_popup">pedestal</div> <div id="T25" class="trans_popup">bust</div> <div id="T26" class="trans_popup">museum</div> <div id="popup" class="pop_up"></div><div id="context_menu" class="pop_up" ></div> 
+<hr size="1" width="550" />  
+    <a href="/">Inicio</a> | <a href="#">Acerca</a> | <a href="#">Colaborar</a> | <a href="idiomas-de-otros-paises.html#donar">Donaciones</a> | <a href="http://eldejd.tumblr.com/ask">Contacto</a> | <a href="#">Suscribirse</a> | <a href="http://languageguideorg.blogspot.com/">Blog</a> | <a href="#">Preferencias</a> | <a href="#">Mi cuenta</a> | <g:plusone></g:plusone><!-- Place this render call where appropriate -->
+    Los demos son tomados de     <a href="http://www.languageguide.org/">Guía de lenguajes</a> y adaptados de forma didáctica y sencilla. Esta es una propuesta de generar conocimiento de palabras de otros idiomas y culturas.
+<script type="text/javascript">
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+po.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+
+    
+</body>
+</html>

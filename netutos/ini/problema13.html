@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			Autoaprendizaje de Programaci&oacute;n
+		</title>
+		<link rel ="stylesheet" type = "text/css" href= "css/menu.css"/>
+		<link rel ="stylesheet" type = "text/css" href= "css/general.css"/>
+	</head>
+
+	<body>
+		<div id="logo2">
+			<img src="img/logo.png">
+			<a name="home"><h1>Universidad Aut&oacute;noma Metropolitana <h2>Unidad Cuajimalpa</h2></h1></a>
+		</div>
+			<hr>	
+			<div id="logo">
+				<a href="index.html">
+				<b>|Inicio|<br></b>
+				</a>
+				<a href="objetos.html#menu">
+				<b>|Menu|<br></b>
+				</a>
+			
+				<img src="uamcasa.png" onclick="location.href='index.html';"/>
+			
+			</div>
+			
+			</div>
+		<div id = "centro">
+			
+			<div id= "menuSup">
+
+				<ul class="menu">
+
+					<li><a href = "index.html">Inicio</a></li>
+					<li><a href= "acerca.html">Acerca de</a></li>
+					<li class = "activoObjetos"><a href ="objetos.html">Objetos de Aprendizaje</a></li>
+					<li><a href ="temario.html">Temario</a></li>
+					<li><a href ="temario.html#contacto">Contacto</a></li>
+				</ul>
+
+			</div>
+
+		<div class="contenidobjet">
+			<div id="contenido">
+	<h4>Palabras Clave</h4>
+	<p class="palclave">
+
+		Estructuras de control: Condicionales<br>
+		Ciclo For <br>
+	</p>
+			<!--Problema1-->
+				<h2>PROBLEMA #13</h2>
+				<hr/>
+				
+				<p><h3>Crear un programa que calcule del 1 al 10 la multiplicaci&oacute;n del n&uacute;mero que el usuario indique
+				</h3><br>
+				<hr>
+				<br>
+				<h2>An&aacute;lisis</h2>	
+				<b>Planteamiento de la soluci&oacute;n:</b><br>
+				Se pretende encontrar la tabla de multiplicar del 1 al diez, del numero que el usuario indique, con el uso de un for
+				<br><br>
+				<div class="centrar">
+					<a name="psc13"><h5>Pseudoc&oacute;digo</h5></a>
+					<br>
+					<pre>
+	Proceso Principal(void)
+
+						Escribir("     Tabla de multiplicar");
+						Escribir("Dame la tabla de multiplicar: ");
+						Leer m;
+					    
+						Para i=1;i&lt;=10;i++
+					    
+							total = i*m;
+							Escribir ("%d x %d= %d\n",i,m,total);
+					    
+						FinPara
+					    
+						Escribir("fin de programa ");
+						
+					FinProceso
+
+
+					</pre><!--link arriba-->
+				<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+					<br>
+					<a name="diagram">
+					<h5>Diagrama de Flujo</h5></a>
+					<img class="imdiag"src="img/diagrama13.png"/><!--link arriba-->
+				<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+					<br>
+					<a name="code13"><h5>C&oacute;digo en Lenguaje C</h5></a>
+					<br>
+					<b>Este programa muestra la Tabla de Multiplicar.</b>
+					
+<pre>					
+#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;
+
+int main(void)
+{
+    int i,m,total;
+    printf("     Tabla de multiplicar\n\n\n");
+    printf("Dame la tabla de multiplicar: ");
+    scanf("%d",&m);
+    
+    for(i=1;i&lt;=10;i++)
+    {
+    
+     total=i*m;
+     printf("\n%d x %d= %d\n",i,m,total);
+    
+    }
+    
+     printf("\n\nfin de programa ");
+    getch();
+    return 0;
+}
+
+</pre><!--arriba-->
+<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+					<a name="out13"><h5>Salida del programa</h5></a>
+					<img src="img/salida13.png"/>
+				</div>
+				<a href="index.html">
+				<b>|Inicio|</b>
+				</a>
+				<a href="#home">
+				<b>|Volver Arriba|</b>
+				</a>
+				</p>
+				
+				<!--Fin Problema1-->
+			</div>
+				
+		</div>
+		
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="estilo1.css">
+</head>
+<body>
+
+<header class="nav">
+    
+    
+	<nav class="nav">
+	<ul>
+		<li><a href="http://jd.cloudvent.net">INICIO</a></li>
+		<li><a href="http://jd.cloudvent.net#redes">MÁS INFORMACIÓN?????</a></li>
+		<li><a href="https://github.com/juandavidcr">Perfil <img src="git.jpg" title="github"></a></li>
+	</ul>
+	</nav>
+</header>
+<div class="jumbotron">
+
+
+	<div class="col-md-12">
+	<h3>Conceptos basicos de Bases de datos<br>conocimientos  básicos</h3>
+<p>
+<pre>
+	name RECORD;
+
+    Los registros son similares a los tipos de fila, pero no tienen una estructura predefinida. Se emplean en selecciones y bucles FOR, para mantener una fila de la actual base de datos en una operación SELECT. El mismo registro puede ser usado en diferentes selecciones. El acceso a un campo de registro cuando no hay una fila seleccionada resultará en un error de ejecución.
+
+    Las filas NEW y OLD en un disparador se pasan a los procedimientos como registros. Esto es necesario porque en Postgres un mismo procedimiento desencadenado puede tener sucesos disparadores en diferentes tablas.
+\l listar bases de datos
+\dg listar roles
+\da listar funciones de agregacion
+\dd listar comentarios de objetos
+\di listar indices
+\dl listar objetos grandes
+\do listar operadores
+\dp listar  privilegios de acceso a tablas
+\dt listar tablas
+\dT listar tipós de datos
+\! ORDEN (INTERPRETE)
+</pre>
+	
+</p>
+</div>
+
+
+
+ 
+<pre>
+<div class="col-md-6">
+	¿Cómo instalar?
+
+	si es usando XAMPP simplemente inicias el panel de administrador del XAMPP.
+</div>
+			<p>1.-Hacer una base de datos de nombre : servicios
+2.-dentro de la base de datos servicios crear una tabla de nombre: usuarios;
+  y va tener las siguientes attrib. (cols):
+id
+user
+contrasena
+donde id va ser un attrib. de tipo entero, de tamaño 5
+auto-incremental.
+b) user, ve a ser un tipo de dato VARCHAR de 13 y el attrib contrasena va a ser de tipo VARCHAR DE 15
+c) insertar un usuario en la tabla usuarios donde el nombre del usuario debe ser admin y contraseña admin
+3.-comandos pista:
+para entrar a una base de datos se utiliza el comando USE
+para crear una base de datos USE y el nombre de la base  'servcios' por ejemplo.
+para usa usar una tabla use y el nombre de la tabla.
+para ver las tablas dentro de una base "SHOW tables estando dentro de la base de donde se quieren ver las tablas, 
+para ver la estructura de la tabla se escribe el comando de DESCRIBE usuarios
+
+0.-crear un archivo login.php y denntro crear
+1.- un formulario donde va tener 2 inputs de tipo texto el de abajo es type password
+un submit boton
+el de tipo texto va recibir el  nombre de usuario en 
+
+
+solo si regresa 1
+
+------------------------------------------------
+recibir los datos enviados por php necesito 2 variables que vanb a recibir el usuario y la contraseña que vienen del form
+necesita conectarse a la base de dtos servicios 
+y realizar la siguiente consulta:
+- Si se cumple la siguiente condición si user se encuentra en la tabla usuarios y corresponde con la contraseña en la tabla usuarios 
+select * from usuarios where user = $usuarioIngresado and $contraseñaIngresada = contraseña; 
+
+si regresa  resultado unico ,  se debe mostrar en pantalla que el acceso fue ok! de lo contrario Access denied!
+
+y todo va en el archivo validación php.
+Si la validación no es exitosa redireccionar a login.php
+Si la validación es exitosa redireccionar a index.php
+----------------------------------------------------------
+
+	<p>
+</pre>
+
+	</div>
+</div>
+
+</body>
+</html>
