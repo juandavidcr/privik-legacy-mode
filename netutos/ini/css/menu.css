@@ -1,14 +1,14 @@
-/* el menú en si mismo */
+/* el menï¿½ en si mismo */
 .mi-menu{
   text-align: center;
-  height: auto;
+  height: 50px;
   width: 100%;
  
 }
 ul.mi-menu{
   z-index: 1;
   left: 250px;
-  margin-left: 60px;
+  margin-left: 10px;
   background:silver;
 	width: 100%;
   border-bottom:1px solid cadetblue;
@@ -22,7 +22,7 @@ li.mi-menu{
     list-style-type: none;
     margin:0 auto;/* si queremos centrarlo */
     padding: 60px;
-    /* la altura y su ancho dependerán de los textos */
+    /* la altura y su ancho dependerï¿½n de los textos */
     height: 0 auto; 
     width: 0 auto;
     /* el color de fondo */
@@ -37,11 +37,11 @@ li.mi-menu{
   /* cada item del menu */
   .mi-menu  li {
     display: block;
-    float: left; /* la lista se ve horizontal */
-    height: 120%;
+    float: left;
+    height: 50px;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 10px 10px 0 0;
+    padding: 200px;
     position: relative;
   }
   .mi-menu li a {
@@ -54,7 +54,7 @@ li.mi-menu{
     font-weight: bold;
     line-height: auto;
     padding: 0 14px;
-    margin: 6% 0;
+ 
     text-decoration: none;
     /* animamos el cambio de color de los textos */
     -webkit-transition: color .2s ease-in-out;
@@ -63,13 +63,13 @@ li.mi-menu{
     -ms-transition: color .2s ease-in-out;
     transition: color .2s ease-in-out;
   }
-  /* eliminamos los bordes del primer y el último */
+  /* eliminamos los bordes del primer y el ï¿½ltimo */
   .mi-menu li:first-child a { border-left: none; }
   .mi-menu li:last-child a{ border-right: none; }
   /* efecto hover cambia el color */
   .mi-menu li:hover > a { color: CadetBlue; }
 
-  /* los submenús */
+  /* los submenï¿½s */
   .mi-menu ul {
     border-radius: 0 0 5px 5px;
     left: 1%;
@@ -94,7 +94,7 @@ li.mi-menu{
   /* son visibes al poner el cursor encima */
   .mi-menu li:hover > ul { opacity: 1; }
 
-   /* cada un ode los items de los submenús */
+   /* cada un ode los items de los submenï¿½s */
   .mi-menu ul li {
     height: 0; /* no son visibles */
     overflow: hidden;
@@ -107,25 +107,25 @@ li.mi-menu{
     transition: height .25s ease .1s;
   }
   .mi-menu li:hover > ul li {
-    height: 80%; /* los mostramos */
-    overflow: visible;
+    height: 50px; /* los mostramos */
+    overflow: hidden;
     padding-top: 5px;
     padding-bottom: 10px;
-	  margin:10%;
+	 
   }
   .mi-menu ul li a {
     border: none;
     border-bottom: 1px solid #111;
     margin: 0;
-    /* el ancho dependerá de los textos a utilizar */
+    /* el ancho dependerï¿½ de los textos a utilizar */
     padding: 5px 20px;
     width: 30%;
   }
-  /* el último no tiene un borde */
+  /* el ï¿½ltimo no tiene un borde */
   .mi-menu ul li:last-child a { border: none; }
 .ajustable li{
   line-height: 14px;
-  width: 400px;
+  width: 100px;
 }
 .ajustable ul{
   line-height: 10px;
