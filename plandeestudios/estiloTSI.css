@@ -7,8 +7,9 @@ body{
 img{
 overflow:hidden;
 }
-h1{
+h1#titulo{
    font-size:2.5em;
+   padding-top: 5%;
 }
 .centro{
   margin-left: auto;
@@ -71,6 +72,7 @@ ul{
 .enc>img{
   float: right;
 }
+
 tr{
   color:black;
 	background:#81F781;
@@ -111,9 +113,10 @@ td{
 .encabezado{
    background:orange;
    border-radius:10px;
-   width:70%;
+   width:97.1%;
    height: 400px;
-   margin-left:1%;
+   margin-bottom: 50px;
+   padding-left:3%;
 }
 .verde{
    background:#CEF6CE;
